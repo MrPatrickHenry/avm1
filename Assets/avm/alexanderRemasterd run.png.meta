@@ -1,0 +1,444 @@
+fileFormatVersion: 2
+guid: 34ba3918fa3574ed8892983f0a5c719a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: alexanderRemasterd run_0
+      rect:
+        serializedVersion: 2
+        x: 1708
+        y: 418
+        width: 357
+        height: 411
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 774f895bcaf6a48c8a7159495520ec90
+      internalID: 1785330018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alexanderRemasterd run_2
+      rect:
+        serializedVersion: 2
+        x: 2087
+        y: 418
+        width: 348
+        height: 415
+      alignment: 9
+      pivot: {x: 0.40789795, y: 0.577232}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fedbc5b96ed3245a8adf6f2fa96f978f
+      internalID: 1393998991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alexanderRemasterd run_3
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 422
+        width: 410
+        height: 363
+      alignment: 9
+      pivot: {x: 0.43648383, y: 0.6214063}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb396942eba0d4d5abcf7704219787b6
+      internalID: 1548598169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alexanderRemasterd run_4
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 50
+        width: 481
+        height: 335
+      alignment: 9
+      pivot: {x: 0.47917667, y: 0.5956754}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9f90efac6a8b41b09b2ad16cc7acc25
+      internalID: -883609722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alexanderRemasterd run_5
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 424
+        width: 340
+        height: 373
+      alignment: 9
+      pivot: {x: 0.5471342, y: 0.647994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d10268772813e423482bec53074d0345
+      internalID: 1478027279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alexanderRemasterd run_6
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 413
+        width: 375
+        height: 380
+      alignment: 9
+      pivot: {x: 0.47329068, y: 0.63178986}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4dc4f6f25f2c4c9d91592e2fabe821d
+      internalID: -548932838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alexanderRemasterd run_7
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 420
+        width: 338
+        height: 374
+      alignment: 9
+      pivot: {x: 0.3518339, y: 0.6446164}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34b7da44754044cfa86f4850db1b69a4
+      internalID: -470255473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alexanderRemasterd run_11
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 52
+        width: 428
+        height: 342
+      alignment: 9
+      pivot: {x: 0.5187215, y: 0.61714643}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c44410e44fec476980eef6c877741c1
+      internalID: 1700548919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alexanderRemasterd run_12
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 54
+        width: 323
+        height: 351
+      alignment: 9
+      pivot: {x: 0.38836652, y: 0.6377866}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5020d4382bdbe4962a49a1456f62841d
+      internalID: -821634297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alexanderRemasterd run_14
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 54
+        width: 343
+        height: 351
+      alignment: 9
+      pivot: {x: 0.3364731, y: 0.6581478}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03e9ece51d7e74641b264f45b2a0fa26
+      internalID: 1242731335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alexanderRemasterd run_15
+      rect:
+        serializedVersion: 2
+        x: 1863
+        y: 56
+        width: 394
+        height: 338
+      alignment: 9
+      pivot: {x: 0.4440732, y: 0.62588435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be1fb8d5785154c13a02adad07a0ec61
+      internalID: -36022625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alexanderRemasterd run_19
+      rect:
+        serializedVersion: 2
+        x: 2456
+        y: 424
+        width: 384
+        height: 444
+      alignment: 9
+      pivot: {x: 0.4478334, y: 0.54060555}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2d54697821e1473786205b5521dcb10
+      internalID: -1919859454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      alexanderRemasterd run_8: -1841865920
+      alexanderRemasterd run_7: -470255473
+      alexanderRemasterd run_2: 1393998991
+      alexanderRemasterd run_10: 1653785372
+      alexanderRemasterd run_20: 99579592
+      alexanderRemasterd run_3: 1548598169
+      alexanderRemasterd run_9: 720431769
+      alexanderRemasterd run_4: -883609722
+      alexanderRemasterd run_21: 1098719888
+      alexanderRemasterd run_11: 1700548919
+      alexanderRemasterd run_15: -36022625
+      alexanderRemasterd run_18: -937246365
+      alexanderRemasterd run_0: 1785330018
+      alexanderRemasterd run_12: -821634297
+      alexanderRemasterd run_6: -548932838
+      alexanderRemasterd run_16: 928616928
+      alexanderRemasterd run_17: -978481856
+      alexanderRemasterd run_1: 1042007190
+      alexanderRemasterd run_19: -1919859454
+      alexanderRemasterd run_14: 1242731335
+      alexanderRemasterd run_13: -1437348566
+      alexanderRemasterd run_5: 1478027279
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,459 @@
+fileFormatVersion: 2
+guid: 6f67372c83bac45e8b661bb47b884900
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: skullGloopers_1
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 596
+        width: 421
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 049fc02fcc6624a1e8d4d59eddc14c50
+      internalID: -386400073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullGloopers_9
+      rect:
+        serializedVersion: 2
+        x: 1675
+        y: 552
+        width: 420
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 118f967ad65914988a88a313cdce8561
+      internalID: 1341283108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullGloopers_10
+      rect:
+        serializedVersion: 2
+        x: 3049
+        y: 551
+        width: 430
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5884866ad3a84422eb56d68cd3f7fd64
+      internalID: -531647625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullGloopers_11
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 608
+        width: 276
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99d8f7334355d4ca4b6765379df8485f
+      internalID: -1240384596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullGloopers_13
+      rect:
+        serializedVersion: 2
+        x: 2125
+        y: 528
+        width: 430
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a3f2717f75b9490ba7fc5d57179b804
+      internalID: 797624730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullGloopers_15
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 614
+        width: 301
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0b970508e79c4a6a995fc2efc5620b5
+      internalID: 177798825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullGloopers_19
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 630
+        width: 258
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e76d08c693fe44c4b75acdb85614797
+      internalID: -1667827686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullGloopers_20
+      rect:
+        serializedVersion: 2
+        x: 2575
+        y: 483
+        width: 422
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04a1e1ec323f34f62af2b4ec1485466a
+      internalID: -213780192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullGloopers_64
+      rect:
+        serializedVersion: 2
+        x: 3061
+        y: 80
+        width: 426
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d2e0542ac0e94a68b34cd682145b6d6
+      internalID: -34630359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullGloopers_65
+      rect:
+        serializedVersion: 2
+        x: 2553
+        y: 78
+        width: 427
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec22a7894df7843ab90a559da1ebed88
+      internalID: -1014009673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      skullGloopers_61: 1784979422
+      skullGloopers_26: -1526982720
+      skullGloopers_22: -1422603110
+      skullGloopers_16: 1891063068
+      skullGloopers_13: 797624730
+      skullGloopers_32: 668162897
+      skullGloopers_60: 166132680
+      skullGloopers_66: -435608028
+      skullGloopers_50: 1534577262
+      skullGloopers_21: -1621835315
+      skullGloopers_12: -904854937
+      skullGloopers_52: 317593864
+      skullGloopers_9: 1341283108
+      skullGloopers_58: -209620466
+      skullGloopers_63: 1488163025
+      skullGloopers_70: -405446727
+      skullGloopers_56: -1459939544
+      skullGloopers_28: 1245560406
+      skullGloopers_39: -478563109
+      skullGloopers_59: 1231255953
+      skullGloopers_33: 1807640921
+      skullGloopers_29: 571182667
+      skullGloopers_18: -91424053
+      skullGloopers_51: -1562711215
+      skullGloopers_38: 1353484572
+      skullGloopers_15: 177798825
+      skullGloopers_41: -1008669255
+      skullGloopers_5: -978257394
+      skullGloopers_19: -1667827686
+      skullGloopers_45: 303503661
+      skullGloopers_76: 769693544
+      skullGloopers_73: 1467992870
+      skullGloopers_49: 740082720
+      skullGloopers_42: -789382097
+      skullGloopers_53: 1076797437
+      skullGloopers_69: 297222573
+      skullGloopers_40: 632347308
+      skullGloopers_77: 1379152898
+      skullGloopers_78: 1717609522
+      skullGloopers_7: 480406709
+      skullGloopers_0: -1101555081
+      skullGloopers_35: -99769970
+      skullGloopers_36: -1577388768
+      skullGloopers_44: 1020102513
+      skullGloopers_64: -34630359
+      skullGloopers_25: 1294973328
+      skullGloopers_65: -1014009673
+      skullGloopers_67: 254398488
+      skullGloopers_30: -418040738
+      skullGloopers_55: -1883552896
+      skullGloopers_31: -498277249
+      skullGloopers_74: -471194517
+      skullGloopers_11: -1240384596
+      skullGloopers_57: -937666152
+      skullGloopers_8: 274732881
+      skullGloopers_71: -633030388
+      skullGloopers_46: -756195317
+      skullGloopers_3: -1366880551
+      skullGloopers_4: -562765950
+      skullGloopers_14: 901227751
+      skullGloopers_27: 700931940
+      skullGloopers_24: 576025533
+      skullGloopers_47: 1653526822
+      skullGloopers_37: 1647020875
+      skullGloopers_34: -1250344746
+      skullGloopers_75: 132361919
+      skullGloopers_54: -1035723131
+      skullGloopers_17: -1174871625
+      skullGloopers_20: -213780192
+      skullGloopers_23: -1801608818
+      skullGloopers_1: -386400073
+      skullGloopers_2: 1154441361
+      skullGloopers_6: 1249421687
+      skullGloopers_48: -493922458
+      skullGloopers_10: -531647625
+      skullGloopers_62: -1158762067
+      skullGloopers_72: 2075677694
+      skullGloopers_43: -1040493993
+      skullGloopers_68: -1434639423
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

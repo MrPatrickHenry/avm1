@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - weaponFired
+  - playerHealthText
+  - BossAttack
+  - BottomBar
+  - queenSpiderboss
+  - Medals
+  - HealthBoost
+  - Bubble
+  - ground
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - RoboDog
+  - Water
+  - UI
+  - Puck
+  - Enemy
+  - Ground
+  - Medals
+  - Powerups
+  - Player
+  - BossShark
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 410663305
+    locked: 0

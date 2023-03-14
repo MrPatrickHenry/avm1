@@ -1,0 +1,405 @@
+fileFormatVersion: 2
+guid: d623166bad9ac467880461af7b0d7c64
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: lightningArrivalSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 0
+        width: 92
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb6eb77cebd594777bc4176f1a5ff169
+      internalID: -852538824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lightningArrivalSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 0
+        width: 81
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcb24a79b4d704459bb145ec0dea18f3
+      internalID: 1656016377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lightningArrivalSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 0
+        width: 108
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98c8e1b9dd9934934a7b5657651dfdad
+      internalID: -439153814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lightningArrivalSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 0
+        width: 100
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7b3020ba852c403e8678beaea4dc2c8
+      internalID: -1634428981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lightningArrivalSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 180
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4943408470a8416a99f941e3da709e8
+      internalID: -124181234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lightningArrivalSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 0
+        width: 88
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc53baa26532140719d5418aea0b92ce
+      internalID: 2009408985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lightningArrivalSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 0
+        width: 60
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a129071675554812aec6e75085dc7d0
+      internalID: 1520308300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lightningArrivalSpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 108
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 377a44a80c5e549969325a6344a809eb
+      internalID: 1123428445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lightningArrivalSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 0
+        width: 77
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be67959376f1d46edab398844799a1d3
+      internalID: -369940747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      lightningArrivalSpriteSheet_34: 104714397
+      lightningArrivalSpriteSheet_24: -481520526
+      lightningArrivalSpriteSheet_29: 1382691994
+      lightningArrivalSpriteSheet_36: -1236780662
+      lightningArrivalSpriteSheet_39: -772145329
+      lightningArrivalSpriteSheet_45: -1408274431
+      lightningArrivalSpriteSheet_21: -742371867
+      lightningArrivalSpriteSheet_40: 1213215542
+      lightningArrivalSpriteSheet_8: 774207816
+      lightningArrivalSpriteSheet_25: -1646470896
+      lightningArrivalSpriteSheet_42: 867554145
+      lightningArrivalSpriteSheet_9: -1784758880
+      lightningArrivalSpriteSheet_22: 9068497
+      lightningArrivalSpriteSheet_1: 1656016377
+      lightningArrivalSpriteSheet_14: -1922838565
+      lightningArrivalSpriteSheet_23: 1123428445
+      lightningArrivalSpriteSheet_35: -89072634
+      lightningArrivalSpriteSheet_0: -852538824
+      lightningArrivalSpriteSheet_44: 1175534580
+      lightningArrivalSpriteSheet_16: -1206780067
+      lightningArrivalSpriteSheet_13: -508451559
+      lightningArrivalSpriteSheet_28: -2119852921
+      lightningArrivalSpriteSheet_7: 1520308300
+      lightningArrivalSpriteSheet_32: -55144059
+      lightningArrivalSpriteSheet_19: -1581540145
+      lightningArrivalSpriteSheet_5: -124181234
+      lightningArrivalSpriteSheet_31: 236254864
+      lightningArrivalSpriteSheet_6: 2009408985
+      lightningArrivalSpriteSheet_4: -369940747
+      lightningArrivalSpriteSheet_12: -1313737210
+      lightningArrivalSpriteSheet_38: 1868320599
+      lightningArrivalSpriteSheet_26: 160522949
+      lightningArrivalSpriteSheet_17: -290966623
+      lightningArrivalSpriteSheet_43: 1176289919
+      lightningArrivalSpriteSheet_41: 1297862749
+      lightningArrivalSpriteSheet_15: -1735761026
+      lightningArrivalSpriteSheet_33: 727704544
+      lightningArrivalSpriteSheet_3: -1634428981
+      lightningArrivalSpriteSheet_18: -196590865
+      lightningArrivalSpriteSheet_20: -1315651990
+      lightningArrivalSpriteSheet_30: 262690266
+      lightningArrivalSpriteSheet_2: -439153814
+      lightningArrivalSpriteSheet_37: 2033940643
+      lightningArrivalSpriteSheet_10: 1682094819
+      lightningArrivalSpriteSheet_11: -1052030659
+      lightningArrivalSpriteSheet_27: 1459941164
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
