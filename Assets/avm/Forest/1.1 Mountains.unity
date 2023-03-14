@@ -2639,7 +2639,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4508881ef97e4791bb07d6fc6b47a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 150
   timeText: {fileID: 1779346837}
   timerIsRunning: 1
   GameOVER: {fileID: 980132234}
@@ -8329,12 +8328,12 @@ PrefabInstance:
     - target: {fileID: 2646783587610328720, guid: d3ea2a32ea4a245cca818c8707d2def5,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 528
+      value: 1500
       objectReference: {fileID: 0}
     - target: {fileID: 2646783587610328720, guid: d3ea2a32ea4a245cca818c8707d2def5,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -201
+      value: -79
       objectReference: {fileID: 0}
     - target: {fileID: 2646783587610328723, guid: d3ea2a32ea4a245cca818c8707d2def5,
         type: 3}
@@ -8712,6 +8711,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4957498461732469542, guid: d3ea2a32ea4a245cca818c8707d2def5,
+        type: 3}
+      propertyPath: m_margin.z
+      value: -83.49771
+      objectReference: {fileID: 0}
     - target: {fileID: 5506305889670549461, guid: d3ea2a32ea4a245cca818c8707d2def5,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -8747,6 +8751,16 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -11
       objectReference: {fileID: 0}
+    - target: {fileID: 5932455346019102858, guid: d3ea2a32ea4a245cca818c8707d2def5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -91.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5932455346019102858, guid: d3ea2a32ea4a245cca818c8707d2def5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 13.9
+      objectReference: {fileID: 0}
     - target: {fileID: 5981562349911695406, guid: d3ea2a32ea4a245cca818c8707d2def5,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -8777,6 +8791,21 @@ PrefabInstance:
       propertyPath: m_text
       value: Y
       objectReference: {fileID: 0}
+    - target: {fileID: 6612236526694654132, guid: d3ea2a32ea4a245cca818c8707d2def5,
+        type: 3}
+      propertyPath: m_text
+      value: Hi-Score
+      objectReference: {fileID: 0}
+    - target: {fileID: 6821776655166221735, guid: d3ea2a32ea4a245cca818c8707d2def5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 422
+      objectReference: {fileID: 0}
+    - target: {fileID: 6821776655166221735, guid: d3ea2a32ea4a245cca818c8707d2def5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 123
+      objectReference: {fileID: 0}
     - target: {fileID: 6920937026161523076, guid: d3ea2a32ea4a245cca818c8707d2def5,
         type: 3}
       propertyPath: m_Color.b
@@ -8796,6 +8825,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_text
       value: B
+      objectReference: {fileID: 0}
+    - target: {fileID: 8131975414459850276, guid: d3ea2a32ea4a245cca818c8707d2def5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8131975414459850276, guid: d3ea2a32ea4a245cca818c8707d2def5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 8424569093823616340, guid: d3ea2a32ea4a245cca818c8707d2def5,
         type: 3}
@@ -9244,6 +9283,7 @@ GameObject:
   - component: {fileID: 1024781070}
   - component: {fileID: 1024781069}
   - component: {fileID: 1024781071}
+  - component: {fileID: 1024781072}
   m_Layer: 0
   m_Name: Level Manager
   m_TagString: Untagged
@@ -9315,7 +9355,20 @@ MonoBehaviour:
   player: {fileID: 2068107023}
   GameOVER: {fileID: 609470966}
   bossText: {fileID: 954823282}
+  HiScore: {fileID: 1343733259}
   restartBUtton: {fileID: 1526345289}
+--- !u!114 &1024781072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024781067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f1523a9f781d4630b85fb45f2ce1eca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1032170197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21118,6 +21171,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 25
+--- !u!114 &1343733259 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4957498461732469542, guid: d3ea2a32ea4a245cca818c8707d2def5,
+    type: 3}
+  m_PrefabInstance: {fileID: 980132223}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1348823420
 GameObject:
   m_ObjectHideFlags: 0

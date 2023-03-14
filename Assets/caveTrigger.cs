@@ -24,18 +24,17 @@ public class caveTrigger : MonoBehaviour
         Debug.Log(maskActive + " mask");
         if (collision.transform.tag == "Player")
         {
-            //this is dumb!
-            if (maskActive == false){
-                mask.SetActive(true);
-            }if (maskActive == true)
-            {
-                mask.SetActive(false);
-            }
+            // Get the GameObject's name and set it to "Background1"
+            GameObject background = gameObject;
+            background.name = "Background1";
+            background.SetActive(false);
+
+            // Toggle the mask active state
+            maskActive = !maskActive;
+            mask.SetActive(maskActive);
 
             Debug.Log("Queen Spider Start");
             gameObject.SetActive(false);
-            mask.SetActive(maskActive);
         }
-
     }
 }

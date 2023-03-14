@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class CountdownTImer : MonoBehaviour
 {
-    public float timeRemaining = 120;
+    public static float timeRemaining = 120;
     [SerializeField] TextMeshProUGUI timeText;
     public bool timerIsRunning = false;
     [SerializeField] TextMeshProUGUI GameOVER;

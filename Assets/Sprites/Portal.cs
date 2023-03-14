@@ -22,6 +22,8 @@ public class Portal : MonoBehaviour
 
         if (collision.gameObject.tag == "Player")
         {
+
+            ScoreController.UpdateHighScore();
             int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
             if (SceneManager.sceneCountInBuildSettings > nextSceneIndex)
             {

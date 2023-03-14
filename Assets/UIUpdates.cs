@@ -24,6 +24,8 @@ public class UIUpdates : MonoBehaviour
     [SerializeField]
     TextMeshProUGUI bossText;
 
+    [SerializeField] public
+    TextMeshProUGUI HiScore;
 
     [SerializeField]
     GameObject restartBUtton;
@@ -32,6 +34,7 @@ public class UIUpdates : MonoBehaviour
     private void Start()
     {
         GameOVER.SetActive(false);
+        HiScore.text = GameData.highScore.ToString();
     }
 
 
