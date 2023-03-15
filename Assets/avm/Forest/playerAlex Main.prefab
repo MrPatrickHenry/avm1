@@ -5,9 +5,14 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
+    serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4043450490562969101, guid: ab8a810c883f54d039df0456306b9869,
+        type: 3}
+      propertyPath: m_Name
+      value: EquipedPowerMask
+      objectReference: {fileID: 0}
     - target: {fileID: 5616289782920603983, guid: ab8a810c883f54d039df0456306b9869,
         type: 3}
       propertyPath: Puck
@@ -259,45 +264,7 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 5616289782920603985, guid: ab8a810c883f54d039df0456306b9869, type: 3}
     - {fileID: 5616289782920603983, guid: ab8a810c883f54d039df0456306b9869, type: 3}
-    m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5616289782920603987, guid: ab8a810c883f54d039df0456306b9869,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 621555301996240993}
-    - targetCorrespondingSourceObject: {fileID: 5616289782920603987, guid: ab8a810c883f54d039df0456306b9869,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5616289783621225956}
-    - targetCorrespondingSourceObject: {fileID: 5616289782920603987, guid: ab8a810c883f54d039df0456306b9869,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5616289783621225957}
-    - targetCorrespondingSourceObject: {fileID: 5616289782920603987, guid: ab8a810c883f54d039df0456306b9869,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3415592187098728002}
-    - targetCorrespondingSourceObject: {fileID: 5616289782920603987, guid: ab8a810c883f54d039df0456306b9869,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6178843195419193819}
-    - targetCorrespondingSourceObject: {fileID: 5616289782920603987, guid: ab8a810c883f54d039df0456306b9869,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6378198394178948422}
-    - targetCorrespondingSourceObject: {fileID: 5616289782920603987, guid: ab8a810c883f54d039df0456306b9869,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 286114393124162143}
-    - targetCorrespondingSourceObject: {fileID: 5616289782920603987, guid: ab8a810c883f54d039df0456306b9869,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8667084543424760750}
-    - targetCorrespondingSourceObject: {fileID: 5616289782920603987, guid: ab8a810c883f54d039df0456306b9869,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4226978984265153819}
   m_SourcePrefab: {fileID: 100100000, guid: ab8a810c883f54d039df0456306b9869, type: 3}
 --- !u!1 &3353668468331307782 stripped
 GameObject:
@@ -473,6 +440,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &286114393124162143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3353668468331307782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad1dbd7451b1441fa93856f0676e16cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverScreen: {fileID: 0}
+  pauseMenuScreen: {fileID: 0}
 --- !u!114 &3415592187098728002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -487,6 +468,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HealthRemaining: {fileID: 0}
   GameOVER: {fileID: 0}
+--- !u!114 &4226978984265153819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3353668468331307782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2fde1a60af9542a8ac7c5db19ed5b40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 0.06
+  groundCheckRadius: 0
+  jumpForce: 0
+  slopeCheckDistance: 0
+  maxSlopeAngle: 0
+  groundCheck: {fileID: 0}
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 0
+  noFriction: {fileID: 0}
+  fullFriction: {fileID: 0}
+  myAnimaton: {fileID: 5616289783621225957}
+  playing: 0
+  forwardSpeed: 0
+  backwardSpeed: 0
+  AttackSpeed: 0
+  puckSpeed: 0
+  playerAnimation: AlexanderRemastered
 --- !u!114 &6178843195419193819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -521,21 +532,6 @@ MonoBehaviour:
   FatalDagme: 100
   healthUpdate: 0
   myAnimaton: {fileID: 0}
---- !u!114 &286114393124162143
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3353668468331307782}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad1dbd7451b1441fa93856f0676e16cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameOverScreen: {fileID: 0}
-  pauseMenuScreen: {fileID: 0}
-  spawnPoint: {fileID: 0}
 --- !u!114 &8667084543424760750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -548,32 +544,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e180e8ac467a74b478eb01578fbf1d27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4226978984265153819
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3353668468331307782}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2fde1a60af9542a8ac7c5db19ed5b40, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementSpeed: 0.06
-  groundCheckRadius: 0
-  jumpForce: 0
-  slopeCheckDistance: 0
-  maxSlopeAngle: 0
-  groundCheck: {fileID: 0}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 0
-  noFriction: {fileID: 0}
-  fullFriction: {fileID: 0}
-  myAnimaton: {fileID: 5616289783621225957}
-  playing: 0
-  forwardSpeed: 0
-  backwardSpeed: 0
-  AttackSpeed: 0
-  puckSpeed: 0

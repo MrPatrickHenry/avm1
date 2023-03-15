@@ -80,6 +80,7 @@ public class CharacterController : MonoBehaviour
     public int pucksPS = 1;
     public float fireRate; // The number of seconds between each instantiation
     private float nextFireTime;
+    private float floatSpeed = 5.0f;
 
     private bool moving = false;
     //globals to move
@@ -179,10 +180,11 @@ public class CharacterController : MonoBehaviour
 
         if (isJumpDown)
         {
-            if (!isJumping)
+            if (!isJumping && !groundCheck)
             {
                 Jump();
                 isJumping = true;
+
             }
         }
 
@@ -283,6 +285,12 @@ public class CharacterController : MonoBehaviour
         isBackwardDown = state;
         Flip();
 
+    }
+
+    public void flyFloat()
+    {
+        rb.gravityScale = 0.0f;
+        rb.velocity = Vector2.up * floatSpeed;
     }
 
     private void CheckGround()
