@@ -10,10 +10,10 @@ public class WebCam : MonoBehaviour
 
 
 
-    void Start()
-    {
-        webCamTexture = new WebCamTexture();
-        material.mainTexture = webCamTexture;
-        webCamTexture.Play();
-    }
+    //void Start()
+    //{
+    //    webCamTexture = new WebCamTexture();
+    //    material.mainTexture = webCamTexture;
+    //    webCamTexture.Play();
+    //}
 }

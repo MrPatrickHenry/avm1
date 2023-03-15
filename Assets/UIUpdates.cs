@@ -34,7 +34,7 @@ public class UIUpdates : MonoBehaviour
     private void Start()
     {
         GameOVER.SetActive(false);
-        HiScore.text = GameData.highScore.ToString();
+        //HiScore.text = GameData.highScore.ToString();
     }
 
 
