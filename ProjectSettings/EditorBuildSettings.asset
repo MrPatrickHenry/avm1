@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/avm/BetaScenes/StartCredits.unity
+    guid: b4111cf66d5fd4efd9d2b4cbb4743539
+  - enabled: 1
     path: Assets/avm/Forest/1.1 Mountains.unity
     guid: f0debfb254ce044cfbfbe104aa986364
   - enabled: 1
@@ -46,5 +49,5 @@ EditorBuildSettings:
     guid: e3c551bb7b8a741b2a679e6b71f0c7ce
   - enabled: 1
     path: Assets/avm/BetaScenes/EndCredits.unity
-    guid: b4111cf66d5fd4efd9d2b4cbb4743539
+    guid: 2cbf97d6841d04c89a2ea2069c96903e
   m_configObjects: {}
