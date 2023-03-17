@@ -30,6 +30,9 @@ public class UIUpdates : MonoBehaviour
     [SerializeField]
     GameObject restartBUtton;
 
+    [SerializeField]
+    TextMeshProUGUI medalCount;
+
 
     private void Start()
     {
@@ -47,6 +50,7 @@ public class UIUpdates : MonoBehaviour
         lives.text = HealthManager.lives.ToString();
         HealthRemaining.text = string.Concat(healthString, percent);
         bossText.text = queenSpider.BossHealth.ToString();
+        medalCount.text = medalController.medalCounts.ToString();
 
 
 

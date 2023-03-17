@@ -1,0 +1,1483 @@
+fileFormatVersion: 2
+guid: dae70600e2635493cae2f2e4fdd5acb0
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 180-BADBOT_0
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 2749
+        width: 184
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a6a8a132f6604d1891813a8fdc5c75b
+      internalID: 1057495933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_2
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 2755
+        width: 221
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de0ea534cb93b4180aa4aeeb8e542bbe
+      internalID: -492701899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_4
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 2752
+        width: 234
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3583f98dfd739453da39a922f897308b
+      internalID: -1210173522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_6
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 2745
+        width: 221
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b094195b5c2994c2099bbad2ffefaec7
+      internalID: 231163733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_7
+      rect:
+        serializedVersion: 2
+        x: 1318
+        y: 2753
+        width: 229
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7a7e038693a54679885678eb0b3e8cc
+      internalID: 179274377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_11
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 2745
+        width: 196
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4446106d1f6c94efc8254802c8e7b7ca
+      internalID: 125677157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_19
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 2574
+        width: 203
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d76cf9cbec514c268b4fab2497122c3
+      internalID: -252493527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_21
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 2576
+        width: 240
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d62aa707aa27f48afa75c2f3201d2aa7
+      internalID: -1102772662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_22
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 2574
+        width: 258
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f4fea398ad1649b2a25158c8e5c9a08
+      internalID: -321549382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_24
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 2574
+        width: 223
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab365a447bb424f19a87a37d220e432b
+      internalID: -1230049494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_30
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 2574
+        width: 230
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 257acb5e3bd5246ca932f5ff5a9bf466
+      internalID: -397078154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_36
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 2072
+        width: 593
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e6ecb265104349eab9b694f58a47d3b
+      internalID: 1274330489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_37
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 2073
+        width: 579
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebac37b860ca3427581be60ae65e96e1
+      internalID: 735894927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_38
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 2066
+        width: 584
+        height: 474
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2626fc5e2df33475ebb991aaf9d43480
+      internalID: -676163423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_39
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 2067
+        width: 567
+        height: 474
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c61fd3978c5194ac0946bf4de1aeac86
+      internalID: -318345926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_40
+      rect:
+        serializedVersion: 2
+        x: 2067
+        y: 2519
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 630b69813edf24b46b3599c778bc9e30
+      internalID: 366720324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_41
+      rect:
+        serializedVersion: 2
+        x: 2457
+        y: 2064
+        width: 585
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bf89e9603aa24502ad1ce3d73931c88
+      internalID: 1184865842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_42
+      rect:
+        serializedVersion: 2
+        x: 3077
+        y: 2064
+        width: 588
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11f3a48138dfc4e20905b7ace00c9917
+      internalID: -303578160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_49
+      rect:
+        serializedVersion: 2
+        x: 3662
+        y: 2190
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf49d33c27c1a430bae5c5a6fd987b98
+      internalID: 1631252470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_54
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 1587
+        width: 610
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e82c98695abb44b6bae7c56414f3a554
+      internalID: 1277061101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_55
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 1586
+        width: 505
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c78c433a74d8492c8600017d94f4f89
+      internalID: 271894764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_56
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 1570
+        width: 489
+        height: 466
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6f1f691e4da44006b638a9c4b2d8a4d
+      internalID: 378329991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_57
+      rect:
+        serializedVersion: 2
+        x: 1753
+        y: 1567
+        width: 502
+        height: 472
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97606a38fc81c40acb0bc49a86f6bd2f
+      internalID: -1540244946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_58
+      rect:
+        serializedVersion: 2
+        x: 2275
+        y: 1594
+        width: 502
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bccf7b6385cf64f138179bfa1d26aa88
+      internalID: 2038886233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_59
+      rect:
+        serializedVersion: 2
+        x: 2826
+        y: 1586
+        width: 529
+        height: 451
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3a5bf1de05a041e3b655f4d996e76d0
+      internalID: -2053074399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_60
+      rect:
+        serializedVersion: 2
+        x: 3393
+        y: 1604
+        width: 616
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18a27049eb7d341fb909934a3b0f8a51
+      internalID: 88590383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_62
+      rect:
+        serializedVersion: 2
+        x: 6490
+        y: 1812
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d983045357d8429ba058a047dd253c7
+      internalID: -1362612341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_85
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1092
+        width: 488
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 759c6945e88094b0e8e037d12d4e39ca
+      internalID: -1416526543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_86
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 1098
+        width: 525
+        height: 454
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b9bc3090c3784206b37e130910ef94f
+      internalID: -934569952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_87
+      rect:
+        serializedVersion: 2
+        x: 1237
+        y: 1101
+        width: 471
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18da5ffdf893d463786ce378c155ff97
+      internalID: 2087551717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_90
+      rect:
+        serializedVersion: 2
+        x: 1818
+        y: 1092
+        width: 476
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e59edc948c8ef4196a6394739da24334
+      internalID: 1469537033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_92
+      rect:
+        serializedVersion: 2
+        x: 2409
+        y: 1089
+        width: 481
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19e48e2e57df245b691fc43fc40d5730
+      internalID: 1856067786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_104
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 578
+        width: 574
+        height: 471
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6fa8676a9ee6481dba4ed6a8292660c
+      internalID: 850660959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_105
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 572
+        width: 572
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7107fdd66073f4138ac81a299c48279d
+      internalID: -817161180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_106
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 578
+        width: 547
+        height: 471
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd26ac01c3b934aa59acc872ae1f2858
+      internalID: 1438415083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_107
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 598
+        width: 557
+        height: 451
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24ea7d914d4fc44308df894f9e7c3012
+      internalID: 1186003159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_108
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 591
+        width: 586
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80d7dfb3914bb4025b8e394f246801fe
+      internalID: 1928831146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_110
+      rect:
+        serializedVersion: 2
+        x: 3019
+        y: 594
+        width: 558
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7620faab16114d0790dca0ca196dfd6
+      internalID: 851225971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_111
+      rect:
+        serializedVersion: 2
+        x: 3248
+        y: 1027
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf5206edb0ad4493591321463ce61872
+      internalID: -1185902731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_112
+      rect:
+        serializedVersion: 2
+        x: 3586
+        y: 572
+        width: 573
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0c7cfb154c984fd9b32b799a0f6c11d
+      internalID: -1676722938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_115
+      rect:
+        serializedVersion: 2
+        x: 5930
+        y: 575
+        width: 573
+        height: 447
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf424c5c28fed4443b1ba85e5c50a6af
+      internalID: -840321945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_128
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 98
+        width: 572
+        height: 447
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa9dd2bf0e76a402eb97ac1b6b63aa0d
+      internalID: 2111843106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_129
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 97
+        width: 547
+        height: 449
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24b7a3a77c5f547bda866caaa5cde7ad
+      internalID: 2107927454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_130
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 103
+        width: 527
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65efc707996274f04a40cc7dfd282206
+      internalID: 1578116204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_131
+      rect:
+        serializedVersion: 2
+        x: 1779
+        y: 101
+        width: 552
+        height: 425
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39651b9bb364e4790b108aee434edd4b
+      internalID: -1912508472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_132
+      rect:
+        serializedVersion: 2
+        x: 2330
+        y: 94
+        width: 579
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 448598f51ec8c4936bd64e9ef8a04b7f
+      internalID: 712667508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_133
+      rect:
+        serializedVersion: 2
+        x: 2956
+        y: 97
+        width: 589
+        height: 449
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1519cf618b33493798d5b4a64c4f406
+      internalID: -1781377856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_135
+      rect:
+        serializedVersion: 2
+        x: 3538
+        y: 100
+        width: 624
+        height: 446
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c712c0e9a0ca45639696a8ac967db05
+      internalID: 1014682201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_136
+      rect:
+        serializedVersion: 2
+        x: 4190
+        y: 97
+        width: 640
+        height: 449
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc3a7689d2ae24a349db354bd304d293
+      internalID: -585484057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_137
+      rect:
+        serializedVersion: 2
+        x: 4860
+        y: 75
+        width: 611
+        height: 471
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7775183bd66248148b788f36e39e03f
+      internalID: -1536703841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_139
+      rect:
+        serializedVersion: 2
+        x: 5499
+        y: 74
+        width: 565
+        height: 471
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea9fc37277c3d4cf0a6420238fcd86a9
+      internalID: 836482513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_1
+      rect:
+        serializedVersion: 2
+        x: 4168
+        y: 590
+        width: 574
+        height: 441
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaf1593afd45c40e7bf752c08baba969
+      internalID: -2044565458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_3
+      rect:
+        serializedVersion: 2
+        x: 4765
+        y: 586
+        width: 549
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cd6857571f6f4e6682647314fc62ead
+      internalID: -44946448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_5
+      rect:
+        serializedVersion: 2
+        x: 5327
+        y: 584
+        width: 591
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 054f63f95d7f748cea9173377f524f0f
+      internalID: -1608127468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 180-BADBOT_9
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 2577
+        width: 213
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ab0a34afc32a4b26a6152c449351815
+      internalID: 1247354509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      180-BADBOT_4: -1210173522
+      180-BADBOT_51: 420402445
+      180-BADBOT_79: 951105950
+      180-BADBOT_130: 1578116204
+      180-BADBOT_82: -1833909351
+      180-BADBOT_139: 836482513
+      180-BADBOT_150: 683130561
+      180-BADBOT_40: 366720324
+      180-BADBOT_52: 610634588
+      180-BADBOT_97: -881407813
+      180-BADBOT_133: -1781377856
+      180-BADBOT_137: -1536703841
+      180-BADBOT_54: 1277061101
+      180-BADBOT_32: -1387537058
+      180-BADBOT_159: 1351704097
+      180-BADBOT_121: -791467878
+      180-BADBOT_67: 497921598
+      180-BADBOT_46: -1446114005
+      180-BADBOT_15: -1506622347
+      180-BADBOT_92: 1856067786
+      180-BADBOT_157: -903955000
+      180-BADBOT_100: -1470964670
+      180-BADBOT_69: -315642517
+      180-BADBOT_156: -68599565
+      180-BADBOT_140: -876183100
+      180-BADBOT_114: 453774032
+      180-BADBOT_162: 978487573
+      180-BADBOT_128: 2111843106
+      180-BADBOT_138: -812691931
+      180-BADBOT_167: 1249332153
+      180-BADBOT_22: -321549382
+      180-BADBOT_132: 712667508
+      180-BADBOT_42: -303578160
+      180-BADBOT_74: -1865306357
+      180-BADBOT_0: 1057495933
+      180-BADBOT_110: 851225971
+      180-BADBOT_122: -1718032362
+      180-BADBOT_58: 2038886233
+      180-BADBOT_14: -1586639386
+      180-BADBOT_16: -1159784012
+      180-BADBOT_72: -146234749
+      180-BADBOT_153: -1593174555
+      180-BADBOT_102: -1247499456
+      180-BADBOT_94: 1586514600
+      180-BADBOT_31: 1305954097
+      180-BADBOT_45: -1540375415
+      180-BADBOT_164: -1788255859
+      180-BADBOT_6: 231163733
+      180-BADBOT_101: -388492828
+      180-BADBOT_56: 378329991
+      180-BADBOT_155: -1368051309
+      180-BADBOT_119: -1565455937
+      180-BADBOT_63: -2000659728
+      180-BADBOT_27: -1892211572
+      180-BADBOT_143: 173290130
+      180-BADBOT_75: -846877113
+      180-BADBOT_127: -1973039419
+      180-BADBOT_9: 1247354509
+      180-BADBOT_5: -1608127468
+      180-BADBOT_131: -1912508472
+      180-BADBOT_11: 125677157
+      180-BADBOT_36: 1274330489
+      180-BADBOT_113: -1674551034
+      180-BADBOT_39: -318345926
+      180-BADBOT_33: -1340767561
+      180-BADBOT_83: -1987335447
+      180-BADBOT_109: -538879435
+      180-BADBOT_29: 448943334
+      180-BADBOT_24: -1230049494
+      180-BADBOT_80: -57397371
+      180-BADBOT_50: 882539396
+      180-BADBOT_84: -1038900038
+      180-BADBOT_115: -840321945
+      180-BADBOT_116: -1737161705
+      180-BADBOT_163: -1968876019
+      180-BADBOT_134: 1681947628
+      180-BADBOT_23: 1510630316
+      180-BADBOT_18: -190943615
+      180-BADBOT_86: -934569952
+      180-BADBOT_96: -565998697
+      180-BADBOT_118: -189618906
+      180-BADBOT_68: 585728268
+      180-BADBOT_1: -2044565458
+      180-BADBOT_106: 1438415083
+      180-BADBOT_144: 1842638400
+      180-BADBOT_145: 2141522343
+      180-BADBOT_60: 88590383
+      180-BADBOT_61: 1281845
+      180-BADBOT_149: 1722969550
+      180-BADBOT_78: -1446138577
+      180-BADBOT_135: 1014682201
+      180-BADBOT_104: 850660959
+      180-BADBOT_112: -1676722938
+      180-BADBOT_166: -1295926097
+      180-BADBOT_111: -1185902731
+      180-BADBOT_71: -439212394
+      180-BADBOT_59: -2053074399
+      180-BADBOT_105: -817161180
+      180-BADBOT_7: 179274377
+      180-BADBOT_13: -1412868229
+      180-BADBOT_146: 1901645553
+      180-BADBOT_152: 1902647967
+      180-BADBOT_49: 1631252470
+      180-BADBOT_41: 1184865842
+      180-BADBOT_48: 1079572936
+      180-BADBOT_81: 113375329
+      180-BADBOT_87: 2087551717
+      180-BADBOT_30: -397078154
+      180-BADBOT_93: 154406870
+      180-BADBOT_99: 1134739606
+      180-BADBOT_120: 292375540
+      180-BADBOT_66: 2000105331
+      180-BADBOT_8: 1596888552
+      180-BADBOT_19: -252493527
+      180-BADBOT_38: -676163423
+      180-BADBOT_151: -733997154
+      180-BADBOT_20: 273131928
+      180-BADBOT_129: 2107927454
+      180-BADBOT_117: -1226986576
+      180-BADBOT_37: 735894927
+      180-BADBOT_3: -44946448
+      180-BADBOT_136: -585484057
+      180-BADBOT_53: -1845063750
+      180-BADBOT_62: -1362612341
+      180-BADBOT_91: 296848908
+      180-BADBOT_154: 1219838897
+      180-BADBOT_12: -1430369736
+      180-BADBOT_28: -1863053011
+      180-BADBOT_47: 690633818
+      180-BADBOT_158: -1244387186
+      180-BADBOT_25: -318002017
+      180-BADBOT_64: -1503728439
+      180-BADBOT_10: 1511475051
+      180-BADBOT_35: 943123852
+      180-BADBOT_44: 522684874
+      180-BADBOT_34: 297588411
+      180-BADBOT_90: 1469537033
+      180-BADBOT_165: -227686210
+      180-BADBOT_73: 1799575530
+      180-BADBOT_141: -712901669
+      180-BADBOT_2: -492701899
+      180-BADBOT_98: 1666531593
+      180-BADBOT_65: -1993231936
+      180-BADBOT_21: -1102772662
+      180-BADBOT_107: 1186003159
+      180-BADBOT_43: -1187641323
+      180-BADBOT_124: 1124935764
+      180-BADBOT_88: 23361624
+      180-BADBOT_142: 494657869
+      180-BADBOT_148: -377291670
+      180-BADBOT_85: -1416526543
+      180-BADBOT_103: -678805109
+      180-BADBOT_108: 1928831146
+      180-BADBOT_17: -839833857
+      180-BADBOT_160: 1382065440
+      180-BADBOT_26: 2088896444
+      180-BADBOT_147: 1680074556
+      180-BADBOT_70: -1249874149
+      180-BADBOT_77: -243380545
+      180-BADBOT_95: -374062132
+      180-BADBOT_76: 906625246
+      180-BADBOT_57: -1540244946
+      180-BADBOT_161: -546313029
+      180-BADBOT_125: 84708748
+      180-BADBOT_55: 271894764
+      180-BADBOT_123: 165154694
+      180-BADBOT_126: -1344652588
+      180-BADBOT_89: -73132623
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using TMPro;
 public class medalController : MonoBehaviour
 {
     public int MedalAward = 10;
     private int playersScore;
     public static AudioSource _audioSource;
+   public static int medalCounts;
+
     private void Start()
     {
         _audioSource = GetComponent<AudioSource>();
@@ -21,6 +23,7 @@ public class medalController : MonoBehaviour
             _audioSource.Play();
             PlayerManager.Score += MedalAward;
             gameObject.SetActive(false);
+            medalCounts += 1;
         }
     }
 
