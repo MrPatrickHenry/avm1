@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MoveSprite : MonoBehaviour
 {
-    public float moveSpeed = 20f; // speed of movement
+    public float moveSpeed = 5f; // speed of movement
     private bool isMovingRight = true; // direction of movement
 
     void Update()

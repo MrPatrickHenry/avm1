@@ -177,7 +177,9 @@ SubShader {
 
 			float alphaClip = (1.0 - _OutlineWidth*_ScaleRatioA - _OutlineSoftness*_ScaleRatioA);
 		
-		
+		#if GLOW_ON
+			alphaClip = min(alphaClip, 1.0 - _GlowOffset * _ScaleRatioB - _GlowOuter * _ScaleRatioB);
+		#endif
 
 			alphaClip = alphaClip / 2.0 - ( .5 / scale) - weight;
 
