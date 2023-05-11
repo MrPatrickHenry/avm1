@@ -10,6 +10,12 @@ public class Drowning : MonoBehaviour
     public static float AirSupplyTime = 130;
     public static float totalTime = 130;
 
+
+    private void Start()
+    {
+        AirSupplyTime = 130;
+
+    }
     private void Update()
     {
         AirSupplyTime -= Time.deltaTime;

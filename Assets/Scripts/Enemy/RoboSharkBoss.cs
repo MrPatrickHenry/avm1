@@ -7,7 +7,7 @@ public class RoboSharkBoss : MonoBehaviour
 {
 
 
-    public int glooperDamage = 34;
+    public int glooperDamage = 32;
     private int PlayerHelathUpdate;
     public float speed = 1f;
     [SerializeField]
@@ -22,10 +22,10 @@ public class RoboSharkBoss : MonoBehaviour
         if (collision.gameObject.name == "playerAlex")
         {
             Debug.Log("Damage Taken!");
-            PlayerHelathUpdate = HealthManager.AlexHealth -= glooperDamage;
+            HealthManager.AlexHealth -= glooperDamage;
             Debug.Log(PlayerHelathUpdate);
             //PlayerController.DamageTaken()
-            GameObject.Destroy(this);
+            //GameObject.Destroy(this);
         }
 
     }

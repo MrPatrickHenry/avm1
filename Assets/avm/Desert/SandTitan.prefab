@@ -12,13 +12,13 @@ GameObject:
   - component: {fileID: 5358077549312794668}
   - component: {fileID: 5007068726791067437}
   - component: {fileID: 7902741841792952780}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: BossHealth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &9144210826964919171
 RectTransform:
   m_ObjectHideFlags: 0
@@ -113,7 +113,7 @@ GameObject:
   - component: {fileID: 4259985740439711187}
   - component: {fileID: 6937079370095430914}
   - component: {fileID: 2231727657191017347}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: BossHealthText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -137,8 +137,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -636.6, y: -525.7}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -454, y: -95}
+  m_SizeDelta: {x: 205.76, y: 58.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6937079370095430914
 CanvasRenderer:
@@ -170,15 +170,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: 100%
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
+  m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4279440316
+  m_fontColor: {r: 0.735849, g: 0.07289071, b: 0.07289071, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -195,8 +195,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 5.6
-  m_fontSizeBase: 5.6
+  m_fontSize: 14.1
+  m_fontSizeBase: 14.1
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -231,7 +231,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 183.93097, w: 43.168}
+  m_margin: {x: 0, y: 0, z: 134.04202, w: 43.168}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -249,9 +249,16 @@ GameObject:
   - component: {fileID: 4959874794136086648}
   - component: {fileID: 4959874794136086645}
   - component: {fileID: 1738753615041870768}
-  m_Layer: 0
+  - component: {fileID: 4959874795142059838}
+  - component: {fileID: 4959874795142059826}
+  - component: {fileID: 4959874795142059824}
+  - component: {fileID: 4959874795142059825}
+  - component: {fileID: 4959874795142059831}
+  - component: {fileID: 4959874795142059832}
+  - component: {fileID: 4959874795142059833}
+  m_Layer: 7
   m_Name: SandTitan
-  m_TagString: Untagged
+  m_TagString: queenSpiderboss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -265,13 +272,13 @@ Transform:
   m_GameObject: {fileID: 4959874794136086649}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 300.5, y: 222.4, z: 0}
-  m_LocalScale: {x: 11.20266, y: 11.20266, z: 11.20266}
+  m_LocalScale: {x: 6.1459475, y: 6.1459475, z: 6.1459475}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4959874794316872541}
   - {fileID: 9144210826964919171}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4959874794136086648
 SpriteRenderer:
@@ -338,7 +345,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.8760067, y: 2.166122}
+  m_Offset: {x: -3.277279, y: 4.1604004}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -349,7 +356,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.4447732, y: 0.43937874}
+  m_Size: {x: 3.3983536, y: 0.8463745}
   m_EdgeRadius: 0
 --- !u!114 &1738753615041870768
 MonoBehaviour:
@@ -358,7 +365,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4959874794136086649}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 02ae682c07c3d45aeb5f8ed8b0e3b1fa, type: 3}
   m_Name: 
@@ -373,8 +380,126 @@ MonoBehaviour:
   projectile: {fileID: 0}
   playing: 0
   SpiderAnimation: {fileID: 0}
-  bosshealthText: {fileID: 0}
+  bosshealthText: {fileID: 2231727657191017347}
   portalExit: {fileID: 0}
+--- !u!50 &4959874795142059838
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4959874794136086649}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 6200000, guid: fafd4a3d7955c2f4f913bd7db1e32678, type: 2}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 6
+--- !u!111 &4959874795142059826
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4959874794136086649}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 8c5486b9bd67042809678afd0a5b7118, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!95 &4959874795142059824
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4959874794136086649}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: df28dcf3bfe2a431faa7ef603ae6cdc0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4959874795142059825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4959874794136086649}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 829ae8bc2d73a4b4cb42b6eab3a61140, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 300
+  DeathLevel: 0
+  TMPtext: {fileID: 0}
+  venom: {fileID: 1522960932120013496, guid: 9af5b5a91ff904a52a585fdaaa6ff2ba, type: 3}
+  venomSpitSpeed: -1200
+  VenomRB: {fileID: 1522960932120013499, guid: 9af5b5a91ff904a52a585fdaaa6ff2ba, type: 3}
+  projectile: {fileID: 1522960932120013499, guid: 9af5b5a91ff904a52a585fdaaa6ff2ba,
+    type: 3}
+  playing: 0
+  BossAnimation: {fileID: 4959874795142059824}
+--- !u!114 &4959874795142059831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4959874794136086649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 241b814f3d3734f3c9ebb155eb95da43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shakeDuration: 1
+  shakeMagnitude: 0.1
+--- !u!114 &4959874795142059832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4959874794136086649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0eabaa7a01e3b44bc9ec95ee7222be45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 20
+--- !u!114 &4959874795142059833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4959874794136086649}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95858cca288f3452bba5f957ea7ad349, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
 --- !u!1 &4959874794316872514
 GameObject:
   m_ObjectHideFlags: 0
@@ -385,13 +510,13 @@ GameObject:
   m_Component:
   - component: {fileID: 4959874794316872541}
   - component: {fileID: 4959874794316872540}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: w_broadsword_gold
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4959874794316872541
 Transform:
   m_ObjectHideFlags: 0

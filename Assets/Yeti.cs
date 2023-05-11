@@ -40,6 +40,10 @@ public class Yeti : MonoBehaviour
             BossHealth = BossHealth - puckDamage;
             Debug.Log("Hit effect" + BossHealth);
             Debug.Log(BossHealth);
+            if (BossHealth == 0)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 

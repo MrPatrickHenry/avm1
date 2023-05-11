@@ -83,7 +83,7 @@ public class PlayerMovement : MonoBehaviour
         if (sceneName == "2-2 water")
         {
             //TODO: swimming lessons
-            //playerAnimation = "Swimming";
+            playerAnimation = "Swimming";
         }
         else
         {

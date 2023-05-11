@@ -1,4 +1,4 @@
-    using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -11,6 +11,10 @@ public class Portal : MonoBehaviour
     public float YrotationsPerMinute = 0f;
     [SerializeField]
     public float ZrotationsPerMinute = 0f;
+    public AudioClip PortalSwish;
+    public AudioSource PlayerSoundEffects; // reference to the audio source component
+    [SerializeField]
+    bool finalLevelScene;
 
     private void Update()
     {
@@ -22,8 +26,12 @@ public class Portal : MonoBehaviour
 
         if (collision.gameObject.tag == "Player")
         {
+            PlayerSoundEffects.PlayOneShot(PortalSwish);
 
-            ScoreController.UpdateHighScore();
+            if (finalLevelScene)
+            {
+                HighScore.UpdateHighScore();
+            }
             int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
             if (SceneManager.sceneCountInBuildSettings > nextSceneIndex)
             {

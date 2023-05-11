@@ -25,7 +25,7 @@ public class SandTitan : MonoBehaviour
     public Rigidbody2D projectile;
     public bool playing;
     [SerializeField]
-    private Animator SpiderAnimation;
+    private Animator TitanAnimator;
     [SerializeField]
     public TextMeshProUGUI bosshealthText;
     public GameObject portalExit;
@@ -35,16 +35,18 @@ public class SandTitan : MonoBehaviour
         if (DeathLevel == BossHealth)
         {
             playing = true;
-            //SpiderAnimation.Play("explodeSpiderQueen", 0, 0);
+            TitanAnimator.Play("SandTitanDeath", 0, 0);
             Destroy(gameObject);
             portalExit.SetActive(true);
         }
+
+        //TitanAnimator.Play("SandTitans",0,0);
     }
 
     private void Start()
     {
-        VenomRB = GetComponent<Rigidbody2D>();
-        InvokeRepeating("spit", 2.0f, Random.Range(3, 8));
+        //VenomRB = GetComponent<Rigidbody2D>();
+        //InvokeRepeating("spit", 2.0f, Random.Range(3, 8));
     }
 
     void spit()
@@ -56,15 +58,6 @@ public class SandTitan : MonoBehaviour
         Rigidbody2D instance = Instantiate(projectile);
 
         instance.velocity = new Vector3(Random.Range(-1000.0f, -1500f) * Time.deltaTime, 0, 0);
-
-        //venom.SetActive(true);
-        //VenomRB.AddForce(transform.right * thrust);
-        //venom.transform.position += new Vector3(venomSpitSpeed * Time.deltaTime, 0.0f, 0.0f);
-        //venom.transform.position += new Vector3(venomSpitSpeed * Time.deltaTime, 0.0f, 0.0f);//player moves backwards
-        //venom.SetActive(false);
-        //savedPlayerPosition = this.transform.position;
-        //venom.transform.position = savedPlayerPosition;
-        //venom.SetActive(false);
     }
 
     void OnCollisionExit2D(Collision2D collision)
@@ -73,7 +66,7 @@ public class SandTitan : MonoBehaviour
         {
             Debug.Log("HIT!");
             //Destroy(collision.gameObject);
-            HealthManager.AlexHealth = -30;
+            HealthManager.AlexHealth = -32;
         }
 
 

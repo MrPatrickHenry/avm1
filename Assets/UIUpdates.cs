@@ -6,69 +6,55 @@ using UnityEngine.SceneManagement;
 
 public class UIUpdates : MonoBehaviour
 {
-    [SerializeField]
-    TextMeshProUGUI HealthRemaining;
+    private TextMeshProUGUI healthRemaining;
+    private TextMeshProUGUI scoreText;
+    private GameObject player;
+    private TextMeshProUGUI bossText;
+    private TextMeshProUGUI hiScore;
+    private GameObject restartButton;
+    private TextMeshProUGUI medalCount;
 
     [SerializeField]
-    TextMeshProUGUI ScoreText;
+    private GameObject gameOver;
 
     [SerializeField]
-    TextMeshProUGUI lives;
-    [SerializeField]
-    GameObject player;
+    private TextMeshProUGUI lives;
 
-    [SerializeField]
-    GameObject GameOVER;
-
-
-    [SerializeField]
-    TextMeshProUGUI bossText;
-
-    [SerializeField] public
-    TextMeshProUGUI HiScore;
-
-    [SerializeField]
-    GameObject restartBUtton;
-
-    [SerializeField]
-    TextMeshProUGUI medalCount;
-
+    public bool isDead;
 
     private void Start()
     {
-        GameOVER.SetActive(false);
-        //HiScore.text = GameData.highScore.ToString();
+        healthRemaining = GameObject.Find("Damage").GetComponent<TextMeshProUGUI>();
+        scoreText = GameObject.Find("ScoreText").GetComponent<TextMeshProUGUI>();
+        //lives = GameObject.Find("Lives").GetComponent<TextMeshProUGUI>();
+        player = GameObject.Find("playerAlex Variant");
+        bossText = GameObject.Find("BossHealthText").GetComponent<TextMeshProUGUI>();
+        hiScore = GameObject.Find("HighScoreText").GetComponent<TextMeshProUGUI>();
+        restartButton = GameObject.Find("Restart");
+        medalCount = GameObject.Find("Medatext").GetComponent<TextMeshProUGUI>();
+
+        gameOver.SetActive(false);
+        hiScore.text = GameData.highScore.ToString();
+        HealthManager.AlexHealth = 100;
     }
 
-
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        string healthString = HealthManager.AlexHealth.ToString();
-        string percent = " %";
-
         lives.text = HealthManager.lives.ToString();
-        HealthRemaining.text = string.Concat(healthString, percent);
+        healthRemaining.text = $"{HealthManager.AlexHealth} %";
         bossText.text = queenSpider.BossHealth.ToString();
         medalCount.text = medalController.medalCounts.ToString();
 
-
-
-        if (HealthManager.lives == 0)
+        if (HealthManager.lives == 0 && !isDead)
         {
-            GameOVER.SetActive(true);
-
+            isDead = true;
+            gameOver.SetActive(true);
             Debug.Log("DEAD");
-
             PlayerManager.PauseGame();
             player.SetActive(false);
         }
-        ScoreText.text = PlayerManager.Score.ToString();
-    }
 
-
-    public void RestartGame()
-    {
-        SceneManager.LoadScene(1); // Replace 1 with the build index of your first scene
+        healthRemaining.color = HealthManager.AlexHealth < 30 ? Color.red : Color.white;
+        scoreText.text = PlayerManager.Score.ToString();
     }
 }

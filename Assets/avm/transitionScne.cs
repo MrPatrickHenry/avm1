@@ -6,10 +6,14 @@ using UnityEngine.SceneManagement;
 
 public class transitionScne : MonoBehaviour
 {
+
+    [SerializeField]
+    public float transitionSpeed;
+
     // Start is called before the first frame update
     private void Start()
     {
-        Invoke("nextSceneTransiton", 6f);
+        Invoke("nextSceneTransiton", transitionSpeed);
     }
 
     void nextSceneTransiton()

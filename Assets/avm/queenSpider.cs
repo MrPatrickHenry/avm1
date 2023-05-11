@@ -16,7 +16,7 @@ public class queenSpider : MonoBehaviour
     private GameObject venom;
     private Vector2 savedPlayerPosition;
     [SerializeField]
-    public float venomSpitSpeed= -1200;
+    public float venomSpitSpeed = -1200;
     [SerializeField]
     private Rigidbody2D VenomRB;
     private float thrust = 1f;
@@ -36,12 +36,17 @@ public class queenSpider : MonoBehaviour
             BossAnimation.Play("explodeSpiderQueen", 0, 0);
             Destroy(gameObject);
         }
+
+        if (BossHealth == 0)
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void Start()
     {
         VenomRB = GetComponent<Rigidbody2D>();
-        InvokeRepeating("spit", 2.0f, Random.Range(3,8));
+        InvokeRepeating("spit", 2.0f, Random.Range(3, 8));
     }
 
     void spit()
@@ -71,10 +76,7 @@ public class queenSpider : MonoBehaviour
             BossHealth = BossHealth - puckDamage;
             BossAnimation.Play("hurt", 0, 0);
             Debug.Log("boss level: " + BossHealth);
-            if (BossHealth == 0)
-            {
-                Destroy(gameObject);
-            }
+
         }
     }
 

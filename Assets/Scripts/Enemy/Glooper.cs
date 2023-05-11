@@ -6,7 +6,7 @@ public class Glooper : MonoBehaviour
 {
 
     public int glooperDamage = 5;
-    public Transform target;
+    private Transform target;
     public float speed = 1f;
     [SerializeField]
     private Animator myAnimaton;
@@ -34,7 +34,11 @@ public class Glooper : MonoBehaviour
             ////PlayerController.DamageTaken()
         }
     }
+    private void Start()
+    {
+        target = GameObject.Find("playerAlex Variant").transform;
 
+    }
 
     private void Update()
     {

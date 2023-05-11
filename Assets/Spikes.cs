@@ -19,14 +19,13 @@ public class Spikes : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             // Reduce the player's lives by 1
-            HealthManager.lives--;
+            HealthManager.lives --;
             Debug.Log(HealthManager.lives);
             // Reset the player's health to 100
-
             HealthManager.AlexHealth = 100;
             Debug.Log(HealthManager.AlexHealth);
             // Respawn the player at their starting position
-            PlayerManager.Respawn();
+            PlayerManager.ReplayLevel();
         }
     }
 }

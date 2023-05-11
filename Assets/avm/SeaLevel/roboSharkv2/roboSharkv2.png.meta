@@ -1,0 +1,446 @@
+fileFormatVersion: 2
+guid: 11fde4eaeec224a33b2c72944d89329d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: roboSharkv2_2
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 441
+        width: 2422
+        height: 1784
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08a39a7dcb4a14e0aba3c47677c91f1d
+      internalID: -1449956023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboSharkv2_4
+      rect:
+        serializedVersion: 2
+        x: 2549
+        y: 514
+        width: 2419
+        height: 1691
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cff9d2776097a4d2786bac55ff28d2f1
+      internalID: 798889598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboSharkv2_5
+      rect:
+        serializedVersion: 2
+        x: 2669
+        y: 2202
+        width: 38
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b420ef70cacc84777aced794e1d3b584
+      internalID: 855665470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboSharkv2_6
+      rect:
+        serializedVersion: 2
+        x: 5032
+        y: 502
+        width: 2509
+        height: 1710
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f8305b7df8da44809380e4e8ba91823
+      internalID: -191877966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboSharkv2_8
+      rect:
+        serializedVersion: 2
+        x: 7580
+        y: 496
+        width: 2552
+        height: 1716
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a9160244a84f48968b2ea56ec087e74
+      internalID: 881509454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboSharkv2_14
+      rect:
+        serializedVersion: 2
+        x: 10210
+        y: 494
+        width: 2590
+        height: 1692
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83cb5442f3df646a9a87cf0522d332a7
+      internalID: 290345544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboSharkv2_16
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1633
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9dfc0634f1ca48deaf34d05178bea73
+      internalID: -1786898895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboSharkv2_19
+      rect:
+        serializedVersion: 2
+        x: 12955
+        y: 1539
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac5700a54ab9d4da1b52b9ce3f8601b8
+      internalID: 1661258976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboSharkv2_30
+      rect:
+        serializedVersion: 2
+        x: 6111
+        y: 496
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb0da1b952a2f4230af520a7dc2eeda8
+      internalID: -1125843332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roboSharkv2_61
+      rect:
+        serializedVersion: 2
+        x: 4596
+        y: 148
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78af14451e300409cb806b548b93ef6c
+      internalID: 1301413582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      roboSharkv2_61: 1301413582
+      roboSharkv2_36: 167592878
+      roboSharkv2_73: 1036376216
+      roboSharkv2_29: 1458386353
+      roboSharkv2_6: -191877966
+      roboSharkv2_5: 855665470
+      roboSharkv2_41: -1483945776
+      roboSharkv2_75: 1927266332
+      roboSharkv2_69: -1989543337
+      roboSharkv2_7: -105796175
+      roboSharkv2_33: 1443255447
+      roboSharkv2_3: 727319148
+      roboSharkv2_48: 964007741
+      roboSharkv2_58: 1842231609
+      roboSharkv2_51: 1721536970
+      roboSharkv2_59: -1797447579
+      roboSharkv2_15: 864293755
+      roboSharkv2_13: 1240284125
+      roboSharkv2_67: 1126924590
+      roboSharkv2_60: 1443796815
+      roboSharkv2_72: 1122122598
+      roboSharkv2_57: -424608572
+      roboSharkv2_17: 1162952891
+      roboSharkv2_37: 1347501172
+      roboSharkv2_11: -64173016
+      roboSharkv2_10: -901574705
+      roboSharkv2_21: 709932532
+      roboSharkv2_63: -1759944162
+      roboSharkv2_65: -1388698235
+      roboSharkv2_23: 631674337
+      roboSharkv2_0: 23167005
+      roboSharkv2_4: 798889598
+      roboSharkv2_22: 670368834
+      roboSharkv2_26: 371924835
+      roboSharkv2_70: 1908126777
+      roboSharkv2_31: 636064910
+      roboSharkv2_32: -487613600
+      roboSharkv2_35: 1773863264
+      roboSharkv2_1: -1887318975
+      roboSharkv2_44: 329029031
+      roboSharkv2_2: -1449956023
+      roboSharkv2_8: 881509454
+      roboSharkv2_34: -439820633
+      roboSharkv2_43: -486221764
+      roboSharkv2_56: 606019023
+      roboSharkv2_38: 1660273827
+      roboSharkv2_20: -555955111
+      roboSharkv2_47: -1010581670
+      roboSharkv2_52: -1484458869
+      roboSharkv2_24: 1568321319
+      roboSharkv2_39: -552189793
+      roboSharkv2_54: -1590332623
+      roboSharkv2_25: -1679979094
+      roboSharkv2_12: -776398686
+      roboSharkv2_28: -777789101
+      roboSharkv2_30: -1125843332
+      roboSharkv2_40: 789124774
+      roboSharkv2_53: 1598947476
+      roboSharkv2_46: 229267938
+      roboSharkv2_9: 827766604
+      roboSharkv2_49: -1399532
+      roboSharkv2_16: -1786898895
+      roboSharkv2_27: -683957361
+      roboSharkv2_42: 1642401495
+      roboSharkv2_64: -1639497883
+      roboSharkv2_66: 1177040906
+      roboSharkv2_55: 2072670280
+      roboSharkv2_19: 1661258976
+      roboSharkv2_14: 290345544
+      roboSharkv2_45: -1129655870
+      roboSharkv2_62: -517745192
+      roboSharkv2_18: 681942646
+      roboSharkv2_71: -1167098140
+      roboSharkv2_50: -2026839916
+      roboSharkv2_68: 1984156170
+      roboSharkv2_74: -1371858011
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

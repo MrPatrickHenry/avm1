@@ -7,7 +7,7 @@ public class Puck : MonoBehaviour
 {
 
     bool isAttackDown = false;
-    public int damage = 5;
+    public static int damage = 5;
     public int points = 100;
     public float speed = 4.5f;
 
@@ -52,7 +52,8 @@ public class Puck : MonoBehaviour
         if (collision.gameObject.tag == "queenSpiderboss")
         {
             Debug.Log("HIT!");
-            PlayerManager.Score =+ points;
+            PlayerManager.Score += points;
+
         }
     }
 }

@@ -34,10 +34,16 @@ public class PlayerCollision : MonoBehaviour
             GameObject.Destroy(collision.gameObject);
         }
 
-        if (collision.transform.tag == "Spikes")
+        if (collision.gameObject.tag == "Spikes")
         {
             _ = HealthManager.AlexHealth - FatalDagme;
         }
+
+        if (collision.transform.tag == "mechadon")
+        {
+            Debug.Log("DEAD");
+        }
+
 
         if (collision.gameObject.tag == "BossAttack")
         {

@@ -8686,6 +8686,30 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &603056720 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4379285707174155991, guid: d3ea2a32ea4a245cca818c8707d2def5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1092597168}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &603056721 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7999552816169342842, guid: d3ea2a32ea4a245cca818c8707d2def5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1092597168}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &606691448
 GameObject:
   m_ObjectHideFlags: 0
@@ -32007,7 +32031,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4508881ef97e4791bb07d6fc6b47a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 120
   timeText: {fileID: 1437689933}
   timerIsRunning: 1
   GameOVER: {fileID: 1092597179}
@@ -32047,7 +32070,9 @@ MonoBehaviour:
   player: {fileID: 1609186105}
   GameOVER: {fileID: 119718124}
   bossText: {fileID: 1690307329}
+  HiScore: {fileID: 603056721}
   restartBUtton: {fileID: 142889939}
+  medalCount: {fileID: 603056720}
 --- !u!1001 &1873540078
 PrefabInstance:
   m_ObjectHideFlags: 0

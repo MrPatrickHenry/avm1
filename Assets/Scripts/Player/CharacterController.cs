@@ -81,7 +81,13 @@ public class CharacterController : MonoBehaviour
     public float fireRate; // The number of seconds between each instantiation
     private float nextFireTime;
     private float floatSpeed = 5.0f;
-
+    public AudioSource PlayerSoundEffects; // reference to the audio source component
+ //sounds
+    public AudioClip jump;
+    public AudioClip slapshot;
+    public AudioClip hurt;
+    public AudioClip run;
+    public AudioClip swordswing;
     private bool moving = false;
     //globals to move
 
@@ -130,14 +136,14 @@ public class CharacterController : MonoBehaviour
             {
                 moving = true;
                 myAnimaton.Play("AlexanderRunningRemastered", 0, 0);
-                myAnimaton.SetBool("Bool", true);
+                //myAnimaton.SetBool("Bool", true);
             }
         }
         else
         {
             // Stop playing the animation when the player stops moving
             moving = false;
-            myAnimaton.SetBool("Bool", false);
+             //myAnimaton.SetBool("Bool", false);
         }
 
 
@@ -151,13 +157,13 @@ public class CharacterController : MonoBehaviour
             {
                 moving = true;
                 myAnimaton.Play("AlexanderRunningRemastered", 0, 0);
-                myAnimaton.SetBool("Bool", true);
+                //myAnimaton.SetBool("Bool", true);
             }
             else
             {
                 // Stop playing the animation when the player stops moving
                 moving = false;
-                myAnimaton.SetBool("Bool", false);
+                //myAnimaton.SetBool("Bool", false);
             }
 
         }
@@ -198,7 +204,9 @@ public class CharacterController : MonoBehaviour
 
                     if (Time.time >= nextFireTime)
                     {
-                        playing = true;
+                    PlayerSoundEffects.PlayOneShot(slapshot);
+
+                playing = true;
                         myAnimaton.Play("AlexanderAttack", 0, 0);
 
                         // Instantiate the "PuckObject" GameObject
@@ -336,6 +344,8 @@ public class CharacterController : MonoBehaviour
     //Jump
     public void Jump()
     {
+        PlayerSoundEffects.PlayOneShot(jump);
+
         rb.AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
     }
 

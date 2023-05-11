@@ -4,72 +4,53 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
-public class CountdownTImer : MonoBehaviour
+public class CountdownTimer : MonoBehaviour
 {
-    public static float timeRemaining = 120;
-    [SerializeField] TextMeshProUGUI timeText;
-    public bool timerIsRunning = false;
-    [SerializeField] TextMeshProUGUI GameOVER;
-    [SerializeField] TextMeshProUGUI livesRemaining;
-    public int lives;
-    public static AudioSource _audioSource;
     [SerializeField]
-    public AudioClip _pendingDoom;
-
+    public float timeRemainingLevel = 120;
+    [SerializeField] private TextMeshProUGUI timeText;
+    public bool timerIsRunning = false;
+    [SerializeField] private TextMeshProUGUI gameOver;
+    [SerializeField] private TextMeshProUGUI livesRemaining;
+    public int lives;
+    private AudioSource _audioSource;
+    [SerializeField]
+    private AudioClip _pendingDoom;
+    private bool _isAudioPlaying = false;
+    public static float timeRemaining;
     private void Start()
     {
+        timeRemaining = timeRemainingLevel;
         timerIsRunning = true;
         lives = 4;
         _audioSource = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (timerIsRunning)
         {
-            if (timeRemaining > 0)
+            timeRemaining -= Time.deltaTime;
+            if (timeRemaining <= 0)
             {
-                timeRemaining -= Time.deltaTime;
+                HealthManager.AlexHealth = 0;
             }
-            else
+            else if (timeRemaining <= 10 && !_isAudioPlaying)
             {
-                Debug.Log("Time has ended");
-                timeRemaining = 0;
-                timerIsRunning = false;
-				GameOVER.gameObject.SetActive(true);
-				lives = lives -1;
-				Debug.Log(lives);
-				livesRemaining.text = lives.ToString();
-
-            }
-            if(timeRemaining <= 10)
-            {
-
-                //CO_Routine NEEDED
-                timerIsRunning = false;
-
-                GetComponent<AudioSource>().clip = _pendingDoom;
+                _isAudioPlaying = true;
+                _audioSource.clip = _pendingDoom;
                 _audioSource.Play();
-                timeRemaining -= Time.deltaTime;
-                DisplayTime(timeRemaining);
-
-                //for NOW! TODO
-                timeText.gameObject.SetActive(false);
-                
-
             }
 
+            timeText.color = timeRemaining < 30 ? Color.red : Color.white;
+            DisplayTime(timeRemaining);
         }
-        DisplayTime(timeRemaining);
     }
 
-    void DisplayTime(float timeToDisplay)
+    private void DisplayTime(float timeToDisplay)
     {
-        float minutes = Mathf.FloorToInt(timeToDisplay / 60);
-        float seconds = Mathf.FloorToInt(timeToDisplay % 60);
+        int minutes = Mathf.FloorToInt(timeToDisplay / 60);
+        int seconds = Mathf.FloorToInt(timeToDisplay % 60);
         timeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
-
-
 }
