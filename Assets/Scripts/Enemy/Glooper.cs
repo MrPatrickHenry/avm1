@@ -18,6 +18,7 @@ public class Glooper : MonoBehaviour
     public AudioClip _hurt;
     [SerializeField]
     public AudioClip _glooperDead;
+    private Rigidbody2D rb;  // Reference to Rigidbody2D
 
     void OnCollisionEnter2D(Collision2D collision)
     {
@@ -36,6 +37,8 @@ public class Glooper : MonoBehaviour
     }
     private void Start()
     {
+        rb = GetComponent<Rigidbody2D>();  // Get the Rigidbody2D
+
         target = GameObject.Find("playerAlex Variant").transform;
 
     }
@@ -52,7 +55,8 @@ public class Glooper : MonoBehaviour
 
     private void MoveTowards(Vector2 target)
     {
-        transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
+        Vector2 newPosition = Vector2.MoveTowards(rb.position, target, speed * Time.deltaTime);
+        rb.MovePosition(newPosition);
     }
 
     private void RotateTowards(Vector2 target)

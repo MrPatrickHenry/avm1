@@ -30,17 +30,26 @@ public class queenSpider : MonoBehaviour
 
     void Update()
     {
-        if (DeathLevel == BossHealth)
-        {
-            playing = true;
-            BossAnimation.Play("explodeSpiderQueen", 0, 0);
-            Destroy(gameObject);
-        }
-
         if (BossHealth == 0)
         {
-            Destroy(gameObject);
+            //BossAnimation.Play("explodeSpiderQueen", 0, 0);
+
+            //Destroy(gameObject);
+
+            StartCoroutine(DeathSequence());
+
         }
+    }
+
+
+    IEnumerator DeathSequence()
+    {
+        BossAnimation.Play("explodeSpiderQueen", 0, 0);
+
+        // Wait for the length of the animation
+        yield return new WaitForSeconds(BossAnimation.GetCurrentAnimatorStateInfo(0).length);
+
+        Destroy(gameObject);
     }
 
     private void Start()
@@ -53,7 +62,7 @@ public class queenSpider : MonoBehaviour
     {
         BossAnimation.Play("QueenAttack", 0, 0);
         Rigidbody2D instance = Instantiate(projectile);
-        instance.velocity = new Vector3(Random.Range(-1000.0f, -1500f) * Time.deltaTime, 0, 0);
+        instance.linearVelocity = new Vector3(Random.Range(-1000.0f, -1500f) * Time.deltaTime, 0, 0);
 
     }
 

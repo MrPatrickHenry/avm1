@@ -17,7 +17,7 @@ public class PlayerCollision : MonoBehaviour
     {
         Physics2D.IgnoreLayerCollision(7, 7);
 
-        if (collision.transform.tag == "Enemy")
+        if (collision.gameObject.tag == "Enemy")
         {
             Debug.Log("glooper attacked me");
             myAnimaton.Play("AlexanderDamaged", 0, 0.0f);
@@ -25,7 +25,14 @@ public class PlayerCollision : MonoBehaviour
            StartCoroutine(GetHurt());
         }
 
-        if (collision.transform.tag == "Bubble")
+        if (collision.gameObject.tag == "SkyBot")
+        {
+            myAnimaton.Play("AlexanderDamaged", 0, 0.0f);
+            HealthManager.AlexHealth -= glooperDamage;
+            StartCoroutine(GetHurt());
+        }
+
+        if (collision.gameObject.tag == "Bubble")
         {
             Debug.Log("Pre drown Value" + Drowning.AirSupplyTime);
             //HealthManager.AlexHealth += 5;
@@ -39,9 +46,12 @@ public class PlayerCollision : MonoBehaviour
             _ = HealthManager.AlexHealth - FatalDagme;
         }
 
-        if (collision.transform.tag == "mechadon")
+        if (collision.gameObject.tag == "mechadon")
         {
+            StartCoroutine(GetHurt());
             Debug.Log("DEAD");
+            _ = HealthManager.AlexHealth - FatalDagme;
+
         }
 
 

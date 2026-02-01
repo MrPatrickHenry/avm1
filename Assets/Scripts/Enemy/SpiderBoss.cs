@@ -53,7 +53,7 @@ public class SpiderBossNew : MonoBehaviour
 
         Rigidbody2D instance = Instantiate(projectile);
 
-        instance.velocity = new Vector3(Random.Range(-1000.0f, -1500f) * Time.deltaTime, 0, 0);
+        instance.linearVelocity = new Vector3(Random.Range(-1000.0f, -1500f) * Time.deltaTime, 0, 0);
 
         //venom.SetActive(true);
         //VenomRB.AddForce(transform.right * thrust);

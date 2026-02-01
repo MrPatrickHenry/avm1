@@ -12,7 +12,7 @@ public class SandTitan : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI TMPtext;
     private int SpiderScores = 300;
-    private int puckDamage = 10;
+    private int puckDamage = 5;
     [SerializeField]
     private GameObject venom;
     private Vector2 savedPlayerPosition;
@@ -23,7 +23,6 @@ public class SandTitan : MonoBehaviour
     private float thrust = 1f;
     // Update is called once per frame
     public Rigidbody2D projectile;
-    public bool playing;
     [SerializeField]
     private Animator TitanAnimator;
     [SerializeField]
@@ -34,13 +33,17 @@ public class SandTitan : MonoBehaviour
     {
         if (DeathLevel == BossHealth)
         {
-            playing = true;
-            TitanAnimator.Play("SandTitanDeath", 0, 0);
-            Destroy(gameObject);
-            portalExit.SetActive(true);
+            SandTitanDeath();
         }
 
         //TitanAnimator.Play("SandTitans",0,0);
+    }
+
+    public void SandTitanDeath()
+    {
+        TitanAnimator.Play("SandTitanDeath", 0, 0);
+        //Destroy(gameObject);
+        portalExit.SetActive(true);
     }
 
     private void Start()
@@ -57,17 +60,17 @@ public class SandTitan : MonoBehaviour
 
         Rigidbody2D instance = Instantiate(projectile);
 
-        instance.velocity = new Vector3(Random.Range(-1000.0f, -1500f) * Time.deltaTime, 0, 0);
+        instance.linearVelocity = new Vector3(Random.Range(-1000.0f, -1500f) * Time.deltaTime, 0, 0);
     }
 
     void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player")
-        {
-            Debug.Log("HIT!");
-            //Destroy(collision.gameObject);
-            HealthManager.AlexHealth = -32;
-        }
+        // if (collision.gameObject.tag == "Player")
+        // {
+        //     Debug.Log("HIT!");
+        //     //Destroy(collision.gameObject);
+        //     HealthManager.AlexHealth = -32;
+        // }
 
 
         if (collision.gameObject.tag == "weaponFired")

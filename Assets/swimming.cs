@@ -14,7 +14,7 @@ public class swimming : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        myAnimaton.Play("Swimming", 0, 0);
+        // myAnimaton.Play("Swimming", 0, 0);
 
     }
 

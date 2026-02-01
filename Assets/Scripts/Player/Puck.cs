@@ -40,17 +40,22 @@ public class Puck : MonoBehaviour
             PlayerManager.Score += points;
             Debug.Log(PlayerManager.Score);
             this.transform.position = PlayerManager.savedPlayerPosition;
+            Handheld.Vibrate();
+
             Destroy(collision.gameObject);
         }
 
         if (collision.gameObject.tag == "BossAttack")
         {
+            Handheld.Vibrate();
+
             Destroy(collision.gameObject);
         }
 
 
         if (collision.gameObject.tag == "queenSpiderboss")
         {
+            Handheld.Vibrate();
             Debug.Log("HIT!");
             PlayerManager.Score += points;
 

@@ -26,6 +26,8 @@ public class MobileInputController : MonoBehaviour
     public AudioClip slapshot;
     private bool playing = false;
     public float puckSpeed;
+    private int jumpsMade;
+    private const int maxJumps = 2;
 
     [SerializeField]
     public CustomButton jumpButton;
@@ -34,9 +36,20 @@ public class MobileInputController : MonoBehaviour
     private Animator playerAnimator;
     private SpriteRenderer playerSpriteRenderer;
     private Rigidbody2D playerRigidbody;
+    private int playerIdleHash;
 
     //[SerializeField]
     //public Button pauseButton;
+
+
+
+    public LayerMask groundLayer; // To specify which layer is the ground layer
+    public Transform groundCheck; // To specify where the ground check will take place
+    private bool isGrounded; // To store whether the player is on the ground or not
+    public float checkRadius; // To specify the radius of the ground check
+
+
+
 
     private void Start()
     {
@@ -55,6 +68,7 @@ public class MobileInputController : MonoBehaviour
 
         jumpButton.OnButtonPointerDown += OnJumpButtonPressed;
         playerRigidbody = player.GetComponent<Rigidbody2D>();
+        playerIdleHash = Animator.StringToHash("PlayerIdle");
 
         //pauseButton.OnButtonPointerUp += TogglePause;
 
@@ -65,12 +79,26 @@ public class MobileInputController : MonoBehaviour
         if (isMoving)
         {
             player.transform.position += Vector3.right * moveSpeed * Time.deltaTime;
+            // Check if the current animation is "PlayerIdle"
+            if (playerAnimator.GetCurrentAnimatorStateInfo(0).shortNameHash == playerIdleHash)
+            {
+                // Change the animation to "AlexanderRunningRemastered"
+                myAnimaton.Play("AlexanderRunningRemastered", 0, 0);
+            }
         }
 
         if (isMovingBackward)
         {
             player.transform.position -= Vector3.right * moveSpeed * Time.deltaTime;
+            // Check if the current animation is "PlayerIdle"
+            if (playerAnimator.GetCurrentAnimatorStateInfo(0).shortNameHash == playerIdleHash)
+            {
+                // Change the animation to "AlexanderRunningRemastered"
+                myAnimaton.Play("AlexanderRunningRemastered", 0, 0);
+            }
         }
+
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, groundLayer);
 
     }
 
@@ -119,24 +147,21 @@ public class MobileInputController : MonoBehaviour
 
             // Instantiate the "PuckObject" GameObject
             GameObject PuckObject = Instantiate(Puck, transform.position, transform.rotation);
-            // Check if the "isBackwardDown" variable is true
+
             if (isMovingBackward)
             {
                 Debug.Log("backhand shot?");
-                // Adjust the position of the "PuckObject" GameObject
-                PuckObject.transform.position += new Vector3(-puckSpeed * Time.deltaTime, 0.0f, 0.0f);
+                PuckObject.transform.position -= new Vector3(puckSpeed * Time.deltaTime, 0.0f, 0.0f); // move to the left
             }
             else
             {
-                // Adjust the position of the "PuckObject" GameObject
-                PuckObject.transform.position += new Vector3(puckSpeed * Time.deltaTime, 0.0f, 0.0f);
+                PuckObject.transform.position += new Vector3(puckSpeed * Time.deltaTime, 0.0f, 0.0f); // move to the right
             }
-            // Update the time of the next allowed instantiation
-            //attacButton.SetActive(false);
 
             nextFireTime = Time.time + fireRate;
         }
     }
+
 
     private void OnAttackButtonReleased()
     {
@@ -150,12 +175,14 @@ public class MobileInputController : MonoBehaviour
 
     private void OnJumpButtonPressed()
     {
-        //playerRigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-        myAnimaton.Play("AlexanderJump", 0, 0);
-
-        playerRigidbody.AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
+        //if (isGrounded)
+        //{
+        //    isGrounded = false;
+            myAnimaton.Play("AlexanderJump", 0, 0);
+            playerRigidbody.AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
+        //isGrounded = true;
+        //}
     }
-
 
     private void TogglePause()
     {

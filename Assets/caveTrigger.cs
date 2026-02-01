@@ -21,7 +21,6 @@ public class caveTrigger : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log(maskActive + " mask");
         if (collision.transform.tag == "Player")
         {
             // Get the GameObject's name and set it to "Background1"

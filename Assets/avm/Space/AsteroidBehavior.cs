@@ -16,7 +16,7 @@ public class AsteroidBehavior : MonoBehaviour
         {
             target = new Vector2(player.position.x, player.position.y);
             Vector2 direction = target - (Vector2)transform.position;
-            GetComponent<Rigidbody2D>().velocity = direction.normalized * speed;
+            GetComponent<Rigidbody2D>().linearVelocity = direction.normalized * speed;
         }
     }
 

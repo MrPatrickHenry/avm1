@@ -117,7 +117,7 @@ public class PlayerMovement : MonoBehaviour
     {
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
 
-        if (rb.velocity.y <= 0.0f)
+        if (rb.linearVelocity.y <= 0.0f)
         {
             isJumping = false;
         }

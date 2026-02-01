@@ -1,19 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Cinemachine;
 using TMPro;
 public class spiderStart : MonoBehaviour
 {
-
-    [SerializeField]
-    public CinemachineVirtualCamera vcam;
     [SerializeField]
     public float ortho;
     [SerializeField]
     public string BossName;
     [SerializeField]
     public GameObject BossTitle;
+    public GameObject BgImageScene;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +35,7 @@ public class spiderStart : MonoBehaviour
             Debug.Log("co routine ended.");
             ZoomOut();
             gameObject.SetActive(false);
+            BgImageScene.transform.localScale = new Vector3(20f, 20f, 20f);
 
 
         }
@@ -51,7 +50,7 @@ public class spiderStart : MonoBehaviour
 
     public void ZoomOut()
     {
-        vcam.m_Lens.OrthographicSize = 20;
+        //vcam.m_Lens.OrthographicSize = 20;
     }
 
 

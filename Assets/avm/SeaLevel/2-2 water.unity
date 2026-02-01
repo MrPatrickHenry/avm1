@@ -2449,9 +2449,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4508881ef97e4791bb07d6fc6b47a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeRemainingLevel: 120
   timeText: {fileID: 570760937}
   timerIsRunning: 1
-  gameOver: {fileID: 0}
+  gameOver: {fileID: 1111061741}
   livesRemaining: {fileID: 348769966}
   lives: 0
   _pendingDoom: {fileID: 8300000, guid: 2267f7d2af722a2439751461b02db717, type: 3}
@@ -2623,7 +2624,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4258e18e4d4804b62a60e1037799f783, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameOver: {fileID: 0}
   lives: {fileID: 348769966}
   isDead: 0
 --- !u!1 &373107762 stripped
@@ -7084,6 +7084,11 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 894707454509350977, guid: d3ea2a32ea4a245cca818c8707d2def5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 501
+      objectReference: {fileID: 0}
     - target: {fileID: 934748777240413305, guid: d3ea2a32ea4a245cca818c8707d2def5,
         type: 3}
       propertyPath: m_Name
@@ -7109,6 +7114,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1344134825574081367, guid: d3ea2a32ea4a245cca818c8707d2def5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 376
+      objectReference: {fileID: 0}
     - target: {fileID: 1496916382219128367, guid: d3ea2a32ea4a245cca818c8707d2def5,
         type: 3}
       propertyPath: m_RootOrder
@@ -7117,7 +7127,7 @@ PrefabInstance:
     - target: {fileID: 2396901420129023630, guid: d3ea2a32ea4a245cca818c8707d2def5,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2646783587610328720, guid: d3ea2a32ea4a245cca818c8707d2def5,
         type: 3}
@@ -7157,7 +7167,7 @@ PrefabInstance:
     - target: {fileID: 3337736137214435585, guid: d3ea2a32ea4a245cca818c8707d2def5,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3856879360499413965, guid: d3ea2a32ea4a245cca818c8707d2def5,
         type: 3}
@@ -7692,6 +7702,11 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8924188241113376311, guid: d3ea2a32ea4a245cca818c8707d2def5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 488.99988
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 3856879361248302658, guid: d3ea2a32ea4a245cca818c8707d2def5,
@@ -7717,6 +7732,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1111061739}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1111061741 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6075085221970504050, guid: d3ea2a32ea4a245cca818c8707d2def5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1111061739}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373107762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1111061742 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3856879360518139812, guid: d3ea2a32ea4a245cca818c8707d2def5,
@@ -295761,7 +295788,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ec52591ed95a49b49eb3f2b8236cc28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scenelevelnumber: 8
+  scenelevelnumber: 24
 --- !u!1 &1942838612
 GameObject:
   m_ObjectHideFlags: 0

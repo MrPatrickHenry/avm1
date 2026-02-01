@@ -55,12 +55,12 @@ namespace Narrate {
         }
 
         void Idle() {
-            bod.velocity = new Vector2(0, bod.velocity.y);
+            bod.linearVelocity = new Vector2(0, bod.linearVelocity.y);
             nextState = AnimState.Idle;
         }
 
         void WalkMovement(float x) {
-            bod.velocity = new Vector2(WalkForce * x, bod.velocity.y);
+            bod.linearVelocity = new Vector2(WalkForce * x, bod.linearVelocity.y);
             nextState = AnimState.Walk;
         }
 
@@ -71,7 +71,7 @@ namespace Narrate {
         }
 
         void AirMovement(float x) {
-            bod.velocity = new Vector2(x * AirVelocity, bod.velocity.y);
+            bod.linearVelocity = new Vector2(x * AirVelocity, bod.linearVelocity.y);
             transform.eulerAngles = Vector3.zero;
             nextState = AnimState.Airborne;
         }

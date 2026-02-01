@@ -4,13 +4,15 @@ using UnityEngine;
 using TMPro;
 using System;
 using UnityEngine.EventSystems;
+using Unity.VisualScripting;
+using UnityEngine.UI;
 
 public class CharacterController : MonoBehaviour
 {
     //configs
     [SerializeField]
-    public float movementSpeed =300;
-    
+    public float movementSpeed = 300;
+
     [SerializeField]
     private float groundCheckRadius;
     [SerializeField]
@@ -50,7 +52,9 @@ public class CharacterController : MonoBehaviour
     private bool canJump;
     private Vector2 newForce;
     private Vector2 capsuleColliderSize;
-    private int facingDirection = 1;
+        private int facingDirection = 1;
+    private bool isFacingRight = true;
+    private SpriteRenderer spriteRenderer;
     public float timeRemaining = 10;
     private Vector2 savedPlayerPosition;
     [SerializeField]
@@ -75,20 +79,24 @@ public class CharacterController : MonoBehaviour
     public float AttackSpeed;
     public float puckSpeed;
     bool isForwardDown = false;
-   public static bool isBackwardDown = false;
+    public static bool isBackwardDown = false;
     bool isRoboDogButtonDown = false;
     public int pucksPS = 1;
     public float fireRate; // The number of seconds between each instantiation
     private float nextFireTime;
     private float floatSpeed = 5.0f;
     public AudioSource PlayerSoundEffects; // reference to the audio source component
- //sounds
+    private bool cooldownActive = false;
+    //sounds
     public AudioClip jump;
     public AudioClip slapshot;
     public AudioClip hurt;
     public AudioClip run;
     public AudioClip swordswing;
     private bool moving = false;
+    private bool rDogButtonVisible = true;
+    private Button rDogButton;
+
     //globals to move
 
 
@@ -99,27 +107,19 @@ public class CharacterController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         cc = GetComponent<CapsuleCollider2D>();
         capsuleColliderSize = cc.size;
+        GameObject buttonObject = GameObject.Find("rdog");
+        if (buttonObject != null)
+        {
+            rDogButton = buttonObject.GetComponent<Button>();
+        }
+        else
+        {
+            Debug.LogError("Button GameObject not found in the scene.");
+        }
 
         //savedPlayerPosition = spawnPoint.transform.position;
     }
-    //private void FixedUpdate()
-    //{
-    //    if (isForwardDown)
-    //    {
-    //        //transform.position += new Vector3(movementSpeed * Time.deltaTime, 0.0f, 0.0f);
-    //        StartCoroutine(PlayAnimationLoop());
-    //    }
-
-    //    if (isBackwardDown)
-    //    {
-    //        transform.position += new Vector3(-movementSpeed * Time.deltaTime, 0.0f, 0.0f);
-    //        playing = true;
-    //        myAnimaton.Play("AlexanderRunningRemastered", 0, 0);
-    //        myAnimaton.SetBool("Bool", true);
-    //    }
-    //}
-
-    // Update is called once per frame
+    
     void Update()
     {
 
@@ -143,7 +143,7 @@ public class CharacterController : MonoBehaviour
         {
             // Stop playing the animation when the player stops moving
             moving = false;
-             //myAnimaton.SetBool("Bool", false);
+            //myAnimaton.SetBool("Bool", false);
         }
 
 
@@ -176,6 +176,7 @@ public class CharacterController : MonoBehaviour
 
         if (isBackwardDown)
         {
+            Debug.Log("backwards");
             transform.position += new Vector3(-movementSpeed * Time.deltaTime, 0.0f, 0.0f);//player moves backwards
             playing = true;
             myAnimaton.Play("AlexanderRunningRemastered", 0, 0);
@@ -195,62 +196,121 @@ public class CharacterController : MonoBehaviour
         }
 
 
-            //Attack
-            // Check if the "isAttackDown" variable is true
+        //Attack
+        // Check if the "isAttackDown" variable is true
 
-            if (isAttackDown)
+        if (isAttackDown && !isBackwardDown)
+        {
+            // Check if enough time has passed since the last instantiation
+            Debug.Log("Forward Shot");
+            if (Time.time >= nextFireTime)
             {
-                    // Check if enough time has passed since the last instantiation
-
-                    if (Time.time >= nextFireTime)
-                    {
-                    PlayerSoundEffects.PlayOneShot(slapshot);
+                PlayerSoundEffects.PlayOneShot(slapshot);
 
                 playing = true;
-                        myAnimaton.Play("AlexanderAttack", 0, 0);
+                myAnimaton.Play("AlexanderAttack", 0, 0);
 
-                        // Instantiate the "PuckObject" GameObject
-                        GameObject PuckObject = Instantiate(Puck, transform.position, transform.rotation);
-                        // Check if the "isBackwardDown" variable is true
-                        if (isBackwardDown)
-                        {
-                            Debug.Log("backhand shot?");
-                            // Adjust the position of the "PuckObject" GameObject
-                            PuckObject.transform.position += new Vector3(-puckSpeed * Time.deltaTime, 0.0f, 0.0f);
-                        }
-                        else
-                        {
-                            // Adjust the position of the "PuckObject" GameObject
-                            PuckObject.transform.position += new Vector3(puckSpeed * Time.deltaTime, 0.0f, 0.0f);
-                        }
-                // Update the time of the next allowed instantiation
-                //attacButton.SetActive(false);
+                // Instantiate the "PuckObject" GameObject
+                GameObject PuckObject = Instantiate(Puck, transform.position, transform.rotation);
+                Rigidbody2D rb = PuckObject.GetComponent<Rigidbody2D>();
 
-                nextFireTime = Time.time + fireRate;
-                    }
-
+                if (rb != null)
+                {
+                                        float dir = isBackwardDown ? -1f : 1f;
+                    rb.linearVelocity = new Vector2(dir * puckSpeed, 0.0f); // Move by facing, 0.0f); // Move right/forward
                 }
 
-                //ROBODOG
-                if (isRoboDogButtonDown) {
-
-            //RoboDogHide();
-            if (!RoboDog.activeSelf)
-            {
-                Debug.Log("Get Him BOY!");
-                RoboDog.SetActive(true);
-                Debug.Log("Active roboDog");
-                savedPlayerPosition = this.transform.position;
-                Debug.Log(savedPlayerPosition + "Players Position");
-                RoboDog.transform.position = savedPlayerPosition;
-            }
-            if (RoboDog.activeSelf)
-            {
-                Debug.Log("Killer dog?");
-                RoboDog.transform.position += new Vector3(AttackSpeed, 0.0f, 0.0f);// player move forward , forwardspeed can be change
+                nextFireTime = Time.time + fireRate;
             }
         }
+
+
+
+
+        if (isAttackDown && isBackwardDown)
+        {
+            Debug.Log("backwards Shot");
+
+            // This block handles the attack going backward/left
+            if (Time.time >= nextFireTime)
+            {
+                //... existing code for playing sound, animation, etc.
+                PlayerSoundEffects.PlayOneShot(slapshot);
+
+                playing = true;
+                myAnimaton.Play("AlexanderAttack", 0, 0);
+                // Instantiate the "PuckObject" GameObject for a backward attack
+                GameObject PuckObject = Instantiate(Puck, transform.position, transform.rotation);
+                Rigidbody2D rb = PuckObject.GetComponent<Rigidbody2D>();
+
+                if (rb != null)
+                {
+                                        float dir = isBackwardDown ? -1f : 1f;
+                    rb.linearVelocity = new Vector2(dir * puckSpeed, 0.0f); // Move by facing, 0.0f); // Move left/backward
+                }
+
+                nextFireTime = Time.time + fireRate;
+            }
+        }
+
+
+        //ROBODOG NEW
+        //If button is down and cooldown is not active, start the coroutine
+        if (isRoboDogButtonDown && !cooldownActive)
+        {
+            StartCoroutine(RoboDogRoutine());
+        }
+
+     
+
     }
+    //end of update TODO lets review this its way to big!
+
+
+
+
+    IEnumerator RoboDogRoutine()
+    {
+        // Set robodog active and save the player position
+        RoboDog.SetActive(true);
+        Debug.Log("Active roboDog");
+        savedPlayerPosition = this.transform.position;
+        Debug.Log(savedPlayerPosition + "Players Position");
+        RoboDog.transform.position = savedPlayerPosition;
+
+        // Disable the rDogButton
+        rDogButton.interactable = false;
+
+        // Wait for 2 seconds before RoboDog starts moving
+        yield return new WaitForSeconds(2);
+
+        while (RoboDog.activeSelf)
+        {
+            Debug.Log("Killer dog?");
+            RoboDog.transform.position += new Vector3(0.005f, 0.0f, 0.0f); // player move forward , forwardspeed can be change
+                                                                                // If RoboDog is still active after 10 seconds, hide it
+            if (Time.time >= 7f)
+            {
+                RoboDog.SetActive(false);
+                break;
+            }
+            yield return null;
+        }
+
+        // Now start the cooldown
+        cooldownActive = true;
+
+        // Wait for 15 seconds
+        yield return new WaitForSeconds(8);
+
+        // After 15 seconds, reset the cooldown
+        cooldownActive = false;
+
+        // Enable the rDogButton
+        rDogButton.interactable = true;
+    }
+
+
 
     IEnumerator PlayAnimationLoop()
     {
@@ -271,7 +331,7 @@ public class CharacterController : MonoBehaviour
 
     void SawnOject()
     {
-        GameObject newObject = Instantiate(Puck,transform.position,Puck.transform.rotation);
+        GameObject newObject = Instantiate(Puck, transform.position, Puck.transform.rotation);
     }
 
     //IEnumerator FirePuck()
@@ -282,30 +342,40 @@ public class CharacterController : MonoBehaviour
     //}
 
 
-    public void FarwardButton(bool state)
+        public void FarwardButton(bool state)
     {
         isForwardDown = state;
+        if (state)
+        {
+            isFacingRight = true;
+            if (spriteRenderer == null) spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+            if (spriteRenderer != null) spriteRenderer.flipX = false;
+        }
     }
 
 
-    public void BackwardButton(bool state)
+        public void BackwardButton(bool state)
     {
         isBackwardDown = state;
-        Flip();
-
+        if (state)
+        {
+            isFacingRight = false;
+            if (spriteRenderer == null) spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+            if (spriteRenderer != null) spriteRenderer.flipX = true;
+        }
     }
 
     public void flyFloat()
     {
         rb.gravityScale = 0.0f;
-        rb.velocity = Vector2.up * floatSpeed;
+        rb.linearVelocity = Vector2.up * floatSpeed;
     }
 
     private void CheckGround()
     {
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
 
-        if (rb.velocity.y <= 0.0f)
+        if (rb.linearVelocity.y <= 0.0f)
         {
             isJumping = false;
         }

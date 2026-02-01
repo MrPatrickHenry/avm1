@@ -6,34 +6,32 @@ using UnityEngine.SceneManagement;
 public class mechadonController : MonoBehaviour
 {
 
+    public int FatalDagme = 100;
 
     [SerializeField]
     private Animator myAnimaton;
 
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
     void OnCollisionEnter2D(Collision2D collision)
     {
-        //Physics2D.IgnoreLayerCollision(7, 7, true);
+        //Physics2D.IgnoreLayerCollision(7, 7);
 
-        if (collision.gameObject.tag == "player")
+        if (collision.gameObject.tag == "Player")
         {
-            Debug.Log("dead");
-            StartCoroutine(GetHurt());
+            Debug.Log("Dead By MechaDon");
             HealthManager.lives -= 1;
-            Scene currentScene = SceneManager.GetActiveScene();
-            SceneManager.LoadScene(currentScene.name);
+        }
+
+
+        if (HealthManager.AlexHealth <= 0)
+        {
+            // Get the current scene index
+            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+
+            // Load the current scene again
+            SceneManager.LoadScene(currentSceneIndex);
         }
     }
 
-    IEnumerator GetHurt()
-    {
-        myAnimaton.Play("AlexanderDamaged", 0, 0.0f);
-        yield return new WaitForSeconds(2);
+
     }
-}

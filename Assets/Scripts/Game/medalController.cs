@@ -6,7 +6,7 @@ public class medalController : MonoBehaviour
 {
     public int MedalAward = 10;
     private int playersScore;
-    public static AudioSource _audioSource;
+    private AudioSource _audioSource;
    public static int medalCounts;
 
     private void Start()

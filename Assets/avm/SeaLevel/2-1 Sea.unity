@@ -610,23 +610,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5006701329018890770, guid: d3ea2a32ea4a245cca818c8707d2def5,
         type: 3}
+      propertyPath: jumpForce
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5006701329018890770, guid: d3ea2a32ea4a245cca818c8707d2def5,
+        type: 3}
       propertyPath: myAnimaton
       value: 
       objectReference: {fileID: 1829023323}
     - target: {fileID: 5015280081178349555, guid: d3ea2a32ea4a245cca818c8707d2def5,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5015280081178349555, guid: d3ea2a32ea4a245cca818c8707d2def5,
         type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5015280081178349555, guid: d3ea2a32ea4a245cca818c8707d2def5,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: -700
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 5015280081178349555, guid: d3ea2a32ea4a245cca818c8707d2def5,
         type: 3}
@@ -636,7 +641,7 @@ PrefabInstance:
     - target: {fileID: 5015280081178349555, guid: d3ea2a32ea4a245cca818c8707d2def5,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 127
+      value: -65
       objectReference: {fileID: 0}
     - target: {fileID: 5506305889670549461, guid: d3ea2a32ea4a245cca818c8707d2def5,
         type: 3}
@@ -3837,7 +3842,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -92.22, y: -14.36, z: -10}
+  m_LocalPosition: {x: -93, y: -14.54, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6754,7 +6759,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4258e18e4d4804b62a60e1037799f783, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameOver: {fileID: 20245584}
   lives: {fileID: 20245590}
   isDead: 0
 --- !u!114 &1024781072
@@ -6769,6 +6773,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4508881ef97e4791bb07d6fc6b47a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeRemainingLevel: 120
   timeText: {fileID: 1683415831}
   timerIsRunning: 0
   gameOver: {fileID: 0}
@@ -7311,7 +7316,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1105227822}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -72366,12 +72371,12 @@ PrefabInstance:
     - target: {fileID: 3353668468331307781, guid: 2a79630cb2d964d4b863e39a057669b4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -92.22
+      value: -93
       objectReference: {fileID: 0}
     - target: {fileID: 3353668468331307781, guid: 2a79630cb2d964d4b863e39a057669b4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -15.82
+      value: -16
       objectReference: {fileID: 0}
     - target: {fileID: 3353668468331307781, guid: 2a79630cb2d964d4b863e39a057669b4,
         type: 3}
